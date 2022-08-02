@@ -13,6 +13,7 @@ module.exports = {
        'custom-bg-dark':'#070415',
        'darker-1': '#1a202e',
        'darker-2': '#384765',
+       'darker-tr': '#00000011',
        'light-1': '#F1F1E6',
        'yellow-1': '#EED180'
       },

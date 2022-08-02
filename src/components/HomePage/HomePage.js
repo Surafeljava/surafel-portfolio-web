@@ -20,7 +20,7 @@ function HomePage(){
                         <p className="text-4xl md:text-7xl font-roboto font-bold">SURAFEL KINDU</p>
                         <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal hover:text-red-500 duration-500"> Software Engineer 💻 | UI/UX Designer 🎨</p>
                         <br />
-                        <div className="font-roboto font-normal text-lg">
+                        <div className="font-roboto font-normal text-md text-slate-500">
                             Self-driven and passionate software engineer. Research enthusiast on AI, specifically on <span className='text-red-500'>NLP</span>. 
                             Fullstack web and mobile application developer. I also love to work on Graphics Designing and 3D rendering.
                         </div>

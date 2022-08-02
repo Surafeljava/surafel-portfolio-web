@@ -55,15 +55,15 @@ function App() {
           <FaGithub className='w-6 h-6 text-slate-500 group-hover:text-red-500 duration-300 group-hover:-mt-2'/>
         </a>
 
-        <a href="https://github.com/Surafeljava" className='w-6 h-6 group'>
+        <a href="https://www.instagram.com/surafel_kindu/" className='w-6 h-6 group'>
           <FaInstagram className='w-6 h-6 text-slate-500 group-hover:text-red-500 duration-300 group-hover:-mt-2'/>
         </a>
 
-        <a href="https://github.com/Surafeljava" className='w-6 h-6 group'>
+        <a href="https://www.linkedin.com/in/surafel-kindu-11889415b/" className='w-6 h-6 group'>
           <FaLinkedinIn className='w-6 h-6 text-slate-500 group-hover:text-red-500 duration-300 group-hover:-mt-2'/>
         </a>
 
-        <a href="https://github.com/Surafeljava" className='w-6 h-6 group'>
+        <a href="https://twitter.com/surafel_kindu" className='w-6 h-6 group'>
           <FaTwitter className='w-6 h-6 text-slate-500 group-hover:text-red-500 duration-300 group-hover:-mt-2'/>
         </a>
 
