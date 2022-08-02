@@ -17,10 +17,10 @@ function AppBar({scrolldown}){
         <div className={scrolldown ? topClassScroll : topClass}>
 
             <div className="flex grow w-full items-center justify-between md:justify-start md:gap-4">
-                <div className="text-yellow-1 font-roboto font-bold text-3xl flex "> Surafel Kindu </div>
+                <div className="text-yellow-1 font-roboto font-bold text-3xl flex "> CJ. </div>
                 <a href="#abc" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
                     <div className="flex gap-2 items-center">
-                        CV <FaDownload/>
+                        Resume <FaDownload/>
                     </div>
                 </a>
             </div>
