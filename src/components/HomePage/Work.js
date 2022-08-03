@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
-import { FaCodeBranch, FaAngleRight, FaGithub, FaCode } from "react-icons/fa";
+import { FaChevronRight, FaAngleRight, FaGithub, FaCode } from "react-icons/fa";
 // FaCodeBranch
 
 const works = [
-    {id: 1, name: "EQUB Fintech", title: "Senior Front-End Developer", link: "https://www.equb.app/", from: "March 2021", to: "April 2022", idid: "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications. "},
+    {id: 1, name: "EQUB Financial Technologies", title: "Senior Front-End Developer", link: "https://www.equb.app/", from: "March 2021", to: "April 2022", idid: "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications. "},
     {id: 2, name: "Africrowds", title: "Web Front-End Developer", link: "https://africrowds.netlify.app/", from: "December 2021", to: "June 2022", idid: "I worked on a crow funding platform for startups in Africa. I am using Reactjs with TypeScript for the development of the website."},
     {id: 3, name: "Chapa", title: "Front-End Developer & UI/UX Designer", link: "https://chapa.co/", from: "Dec 2021", to: "April 2022", idid: "A Fintech startup working to bring a better digital payment system for the developers and service places in Ethiopia. I used Reactjs and ReactNative while working in this company."},
     {id: 4, name: "GDG Addis", title: "Creative Design Team Leader", link: "https://www.gdgaddis.dev/", from: "Sep 2018", to: "Present", idid: "Google Developers Group in Addis Ababa."},
@@ -16,14 +16,14 @@ function Work(){
     const [selectedWork, setSelectedWork] = useState(1);
 
     return (
-        <div id="work" className="text-stone-300 w-full h-full grow grid grid-cols-12 gap-4 justify-center md:px-12 md:mb-20">
+        <div id="work" className="text-stone-300 w-full grow grid grid-cols-12 gap-4 justify-center md:py-8 md:px-12 md:mb-32">
 
-            <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
-            </div>
+            {/* <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
+            </div> */}
 
-            <div className="w-full col-span-12 md:col-span-8 flex flex-col md:px-6 text-darker-2 rounded-xl items-start">
-                <div className="text-2xl md:text-3xl text-darker-2 font-roboto font-bold tracking-widest mx-0 flex items-center gap-2 mb-8"> 
-                    <FaCodeBranch className="text-red-500 font-normal text-xl md:text-2xl inline"/> 
+            <div className="w-full col-span-12 md:col-span-10 flex flex-col md:px-6 text-darker-2 rounded-xl items-start">
+                <div className="text-2xl md:text-4xl text-darker-2 font-roboto font-bold group tracking-widest mx-0 flex items-center gap-2 mb-8 md:py-8 md:px-4 md:w-full md:bg-gradient-to-r md:from-darker-tr md:to-light-1 md:border-l-2 md:border-red-500"> 
+                    <FaChevronRight className="text-transparent group-hover:text-red-500 font-normal text-sm group-hover:text-xl md:text-2xl inline -ml-8 group-hover:ml-0 duration-500"/> 
                     Where I've Worked 
                 </div>
                 <div className="w-full grid grid-cols-12 grid-flow-row gap-4">
@@ -70,7 +70,7 @@ function Work(){
                             </div>
 
                             <FaCode/>
-                            
+
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { AppBar, HomePage, Work } from './components';
+import { AppBar, HomePage, Work, Contact } from './components';
 
 import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -45,6 +45,7 @@ function App() {
         <HomePage/>
       </div>
       <Work/>
+      <Contact/>
       <div className="text-slate-800 h-10 flex justify-center my-2">Made with ❤ - by Surafel Kindu</div>
 
       <div className="fixed z-200 bottom-0 left-0 flex flex-col justify-center items-center px-4 md:px-8 gap-6 min-h-screen">

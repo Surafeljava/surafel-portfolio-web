@@ -4,7 +4,7 @@ const menus = [
     {id:1, name:'About', url:'#about'},
     {id:2, name:'Experience', url:'#'},
     {id:3, name:'Work', url:'#work'},
-    {id:4, name:'Contact', url:'#'},
+    {id:4, name:'Contact', url:'#contact'},
     {id:5, name:'Socials', url:'#'},
 ]
 
