@@ -39,7 +39,7 @@ function App() {
   }, []);
 
   return (
-    <div onScroll={onScroll} className="flex flex-col bg-light-1 px-20 items-center">
+    <div onScroll={onScroll} className="flex flex-col bg-light-1 px-20 items-center scroll-smooth">
       <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-40 md:pt-4">
         <AppBar scrolldown={!scrollUp}/>
         <HomePage/>

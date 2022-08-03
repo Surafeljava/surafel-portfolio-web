@@ -7,7 +7,7 @@ import { FaChevronRight } from "react-icons/fa";
 const techs = [
     {id:1, name: "Reactjs/CSS/JS ES6+", link: "https://reactjs.org/"}, 
     {id:2, name: "Node.js/Express", link: "https://nodejs.org/en/"}, 
-    {id:3, name: "Tensorflow", link: "https://github.com/Surafeljava"},
+    {id:3, name: "Tensorflow", link: "https://www.tensorflow.org/"},
     {id:4, name: "Flutter", link: "https://flutter.dev/"},
     {id:5, name: "Mongodb", link: "https://www.mongodb.com/"}, 
     {id:6, name: "Postgres SQL", link: "https://www.postgresql.org/"}, 
