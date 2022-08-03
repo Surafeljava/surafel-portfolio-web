@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import { FaCodeBranch, FaAngleRight } from "react-icons/fa";
+import { FaCodeBranch, FaAngleRight, FaGithub, FaCode } from "react-icons/fa";
 // FaCodeBranch
 
 const works = [
@@ -16,18 +16,18 @@ function Work(){
     const [selectedWork, setSelectedWork] = useState(1);
 
     return (
-        <div id="work" className="text-stone-300 w-full h-full grow grid grid-cols-12 gap-4 grid-flow-row justify-center md:px-12 md:mb-20">
+        <div id="work" className="text-stone-300 w-full h-full grow grid grid-cols-12 gap-4 justify-center md:px-12 md:mb-20">
 
             <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
             </div>
 
-            <div className="col-span-12 md:col-span-8 flex flex-col md:px-6 text-darker-2 rounded-xl items-start">
+            <div className="w-full col-span-12 md:col-span-8 flex flex-col md:px-6 text-darker-2 rounded-xl items-start">
                 <div className="text-2xl md:text-3xl text-darker-2 font-roboto font-bold tracking-widest mx-0 flex items-center gap-2 mb-8"> 
                     <FaCodeBranch className="text-red-500 font-normal text-xl md:text-2xl inline"/> 
                     Where I've Worked 
                 </div>
-                <div className="grid grid-cols-12 grid-flow-row gap-4">
-                    <div className="col-span-12 md:col-span-3 w-full flex flex-row md:flex-col font-roboto font-normal text-md gap-4 overflow-scroll md:overflow-visible">
+                <div className="w-full grid grid-cols-12 grid-flow-row gap-4">
+                    <div className="col-span-12 md:col-span-3 w-full flex grow md:flex-col font-roboto font-normal text-md gap-4 overflow-scroll md:overflow-auto">
 
                         {works.map((work) => {
                             return (
@@ -42,22 +42,35 @@ function Work(){
                         
                     </div>
 
-                    <div className="col-span-12 md:col-span-9 flex flex-col">
-                        <div className="text-2xl font-semibold text-slate-600 mb-2">
-                            {works[selectedWork-1].title}
-                        </div>
-                        <a href={works[selectedWork-1].link} className="text-lg font-semibold text-red-500">
-                            @{works[selectedWork-1].name.toLowerCase()}
-                        </a>
-                        <div className="text-md font-normal text-slate-400">
-                            {works[selectedWork-1].from} - {works[selectedWork-1].to}
-                        </div>
-                        <br />
+                    <div className="col-span-12 md:col-span-9 flex gap-4">
+                        <div className="flex flex-col">
+                            <div className="text-2xl font-semibold text-slate-600 mb-2">
+                                {works[selectedWork-1].title}
+                            </div>
+                            <div className="text-md font-normal text-slate-500">
+                                {works[selectedWork-1].from} - {works[selectedWork-1].to}
+                            </div>
+                            <div className="flex gap-2 items-center">
+                                <a href={works[selectedWork-1].link} className="text-lg font-semibold text-red-500 hover:underline duration-500">
+                                    @{works[selectedWork-1].name.toLowerCase()}
+                                </a>
+                                <a href="github"> <FaGithub className='w-6 h-6 text-slate-500 hover:text-darker-1'/> </a>
+                            </div>
+                            <br />
 
-                        <div className="flex flex-row items-center gap-4">
-                            {/* <div className="w-2 h-2 rounded-full bg-red-500"></div> */}
-                            <FaAngleRight className='inline text-red-500 text-sm'/>
-                            {works[selectedWork-1].idid}  
+                            <div className="flex flex-row items-center gap-4">
+                                {/* <div className="w-2 h-2 rounded-full bg-red-500"></div> */}
+                                <FaAngleRight className='inline text-red-500 text-sm'/>
+                                {works[selectedWork-1].idid}  
+                            </div>
+
+                            <br />
+                            <div className="text-md font-bold text-slate-500 font-roboto mb-2">
+                                Technologies / Frameworks I’ve used:
+                            </div>
+
+                            <FaCode/>
+                            
                         </div>
                     </div>
                 </div>

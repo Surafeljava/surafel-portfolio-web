@@ -17,8 +17,9 @@ function HomePage(){
                     <div className="col-span-6 md:col-span-4 w-full flex flex-col">
                         <p className="text-xl text-slate-500 font-roboto font-normal tracking-widest mx-0">👋 Hi, I'm </p>
                         <br />
-                        <p className="text-4xl md:text-7xl font-roboto font-bold">SURAFEL KINDU</p>
-                        <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal hover:text-red-500 duration-500"> Software Engineer 💻 | UI/UX Designer 🎨</p>
+                        <a href="https://linktr.ee/surafelkindu"  
+                        className="text-4xl md:text-7xl font-roboto font-bold hover:text-red-500 duration-500 hover:cursor-pointer">SURAFEL KINDU</a>
+                        <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal"> Software Engineer 💻 | UI/UX Designer 🎨</p>
                         <br />
                         <div className="font-roboto font-normal text-md text-slate-500">
                             Self-driven and passionate software engineer. Research enthusiast on AI, specifically on <span className='text-red-500'>NLP</span>. 
@@ -27,7 +28,7 @@ function HomePage(){
                         <br />
                         <div className="flex">
                             <div className="flex group items-center">
-                                <FaChevronRight className='w-4 h-4 invisible -ml-4 group-hover:ml-0 group-hover:visible duration-200'/>
+                                <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <a href="https://linktr.ee/surafelkindu" 
                                 className="px-4 py-2 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
                                     Read More 😎
