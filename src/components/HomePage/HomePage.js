@@ -4,6 +4,17 @@ import profile from '../../asset/profile.png';
 
 import { FaChevronRight } from "react-icons/fa";
 
+const techs = [
+    {id:1, name: "Reactjs/CSS/JS ES6+", link: "https://reactjs.org/"}, 
+    {id:2, name: "Node.js/Express", link: "https://nodejs.org/en/"}, 
+    {id:3, name: "Tensorflow", link: "https://github.com/Surafeljava"},
+    {id:4, name: "Flutter", link: "https://flutter.dev/"},
+    {id:5, name: "Mongodb", link: "https://www.mongodb.com/"}, 
+    {id:6, name: "Postgres SQL", link: "https://www.postgresql.org/"}, 
+    {id:7, name: "Graphql", link: "https://graphql.org/"}, 
+    {id:8, name: "Git & Github", link: "https://github.com/Surafeljava"},
+];
+
 function HomePage(){
     return (
         <div id="about" className="text-stone-300 w-full h-full grow grid grid-cols-12 grid-flow-row justify-start items-center gap-2">
@@ -25,6 +36,23 @@ function HomePage(){
                             Self-driven and passionate software engineer. Research enthusiast on AI, specifically on <span className='text-red-500'>NLP</span>. 
                             Fullstack web and mobile application developer. I also love to work on Graphics Designing and 3D rendering.
                         </div>
+
+                        <br />
+
+                        <p className="text-xl md:text-xl text-slate-500 font-roboto font-normal mb-4"> Here are a few technologies/frameworks I’ve been working with recently : </p>
+
+                        <div className="grid grid-cols-6">
+                            {techs.map((tech) => {
+                                return (
+                                    <a href={tech.link} id={tech.id} className="col-span-2 flex items-center gap-2 group py-1">
+                                        <FaChevronRight className='w-2 h-2 m-0 opacity-100 group-hover:opacity-0 group-hover:m-1 duration-500'/> 
+                                        <div className="text-dark-1 group-hover:text-red-500">{tech.name}</div>
+                                        <FaChevronRight className='w-2 h-2 -m-2 opacity-0 group-hover:opacity-100 group-hover:m-0 duration-500'/> 
+                                    </a>
+                                );
+                            })}
+                        </div>
+
                         <br />
                         <div className="flex">
                             <div className="flex group items-center">
