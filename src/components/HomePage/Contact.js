@@ -11,13 +11,8 @@ function Contact() {
                 <div className="text-xl font-semibold text-slate-600">
                     +251 942 85 97 23
                 </div>
-                <div className="flex">
-                    <a href="mailto:surafel.mulaw@gmail.com" className="text-md font-roboto font-normal text-slate-500 hover:text-red-500">
-                        surafel.mulaw@gmail.com
-                    </a>
-                </div>
                 <div className="text-md font-normal text-slate-500">
-                    King George VI st, Addis Ababa, Ethiopia
+                    Addis Ababa, Ethiopia
                 </div>
                 <div className="flex my-8">
                     <div className="flex group items-center">

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
-import { FaChevronRight, FaAngleRight, FaGithub, FaCode } from "react-icons/fa";
+import { FaChevronRight, FaAngleRight, FaGithub } from "react-icons/fa";
 // FaCodeBranch
 
 const works = [
-    {id: 1, name: "EQUB Financial Technologies", title: "Senior Front-End Developer", link: "https://www.equb.app/", from: "March 2021", to: "April 2022", idid: "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications. "},
+    {id: 1, name: "EQUB Financial Tech.", title: "Senior Front-End Developer", link: "https://www.equb.app/", from: "March 2021", to: "April 2022", idid: "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications. "},
     {id: 2, name: "Africrowds", title: "Web Front-End Developer", link: "https://africrowds.netlify.app/", from: "December 2021", to: "June 2022", idid: "I worked on a crow funding platform for startups in Africa. I am using Reactjs with TypeScript for the development of the website."},
     {id: 3, name: "Chapa", title: "Front-End Developer & UI/UX Designer", link: "https://chapa.co/", from: "Dec 2021", to: "April 2022", idid: "A Fintech startup working to bring a better digital payment system for the developers and service places in Ethiopia. I used Reactjs and ReactNative while working in this company."},
     {id: 4, name: "GDG Addis", title: "Creative Design Team Leader", link: "https://www.gdgaddis.dev/", from: "Sep 2018", to: "Present", idid: "Google Developers Group in Addis Ababa."},
@@ -27,7 +27,7 @@ function Work(){
                     Where I've Worked 
                 </div>
                 <div className="w-full grid grid-cols-12 grid-flow-row gap-4">
-                    <div className="col-span-12 md:col-span-3 w-full flex grow md:flex-col font-roboto font-normal text-md gap-4 overflow-scroll md:overflow-auto">
+                    <div className="col-span-12 md:col-span-2 w-full flex grow md:flex-col font-roboto font-normal text-md gap-4 overflow-scroll md:overflow-auto">
 
                         {works.map((work) => {
                             return (
@@ -42,7 +42,12 @@ function Work(){
                         
                     </div>
 
-                    <div className="col-span-12 md:col-span-9 flex gap-4">
+                    {/* Work Images Here */}
+                    <div className="col-span-4 w-full h-full bg-darker-tr rounded-lg">
+
+                    </div>
+
+                    <div className="col-span-12 md:col-span-6 flex gap-4">
                         <div className="flex flex-col">
                             <div className="text-2xl font-semibold text-slate-600 mb-2">
                                 {works[selectedWork-1].title}
@@ -64,12 +69,12 @@ function Work(){
                                 {works[selectedWork-1].idid}  
                             </div>
 
-                            <br />
+                            {/* <br />
                             <div className="text-md font-bold text-slate-500 font-roboto mb-2">
                                 Technologies / Frameworks I’ve used:
                             </div>
 
-                            <FaCode/>
+                            <FaCode/> */}
 
                         </div>
                     </div>

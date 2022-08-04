@@ -5,14 +5,13 @@ import profile from '../../asset/profile.png';
 import { FaChevronRight } from "react-icons/fa";
 
 const techs = [
-    {id:1, name: "Reactjs/CSS/JS ES6+", link: "https://reactjs.org/"}, 
+    {id:1, name: "Reactjs", link: "https://reactjs.org/"}, 
     {id:2, name: "Node.js/Express", link: "https://nodejs.org/en/"}, 
-    {id:3, name: "Tensorflow", link: "https://www.tensorflow.org/"},
-    {id:4, name: "Flutter", link: "https://flutter.dev/"},
-    {id:5, name: "Mongodb", link: "https://www.mongodb.com/"}, 
-    {id:6, name: "Postgres SQL", link: "https://www.postgresql.org/"}, 
-    {id:7, name: "Graphql", link: "https://graphql.org/"}, 
-    {id:8, name: "Git & Github", link: "https://github.com/Surafeljava"},
+    {id:3, name: "Mongodb", link: "https://www.mongodb.com/"}, 
+    {id:4, name: "Graphql", link: "https://graphql.org/"}, 
+    {id:5, name: "Postgres SQL", link: "https://www.postgresql.org/"}, 
+    {id:6, name: "Flutter", link: "https://flutter.dev/"},
+    {id:7, name: "Tensorflow", link: "https://www.tensorflow.org/"},
 ];
 
 function HomePage(){
@@ -23,7 +22,7 @@ function HomePage(){
                 
                 <div className="grid grid-cols-6 grid-flow-row w-full gap-2 md:gap-4">
                     <div className="col-span-6 md:col-span-2 w-full flex flex-col">
-                        <img src={profile} alt="profile pic" className="rounded-xl hover:cursor-pointer duration-300 -ml-2 hover:ml-0" />
+                        <img src={profile} alt="profile pic" className="rounded-xl hover:cursor-pointer duration-300" />
                     </div>
                     <div className="col-span-6 md:col-span-4 w-full flex flex-col">
                         <p className="text-xl text-slate-500 font-roboto font-normal tracking-widest mx-0">👋 Hi, I'm </p>
@@ -33,8 +32,9 @@ function HomePage(){
                         <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal"> Software Engineer 💻 | UI/UX Designer 🎨</p>
                         <br />
                         <div className="font-roboto font-normal text-md text-slate-500">
-                            Self-driven and passionate software engineer. Research enthusiast on AI, specifically on <span className='text-red-500'>NLP</span>. 
-                            Fullstack web and mobile application developer. I also love to work on Graphics Designing and 3D rendering.
+                            Self-driven and passionate software engineer. Research enthusiast on AI, specifically on 
+                            <a href="https://huggingface.co/surafelkindu" className='text-red-500 hover:underline duration-500'> NLP </a>. 
+                            Fullstack web and mobile application developer. I also love to work on Graphics UI/UX Designing.
                         </div>
 
                         <br />
@@ -59,7 +59,7 @@ function HomePage(){
                                 <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <a href="https://linktr.ee/surafelkindu" 
                                 className="px-4 py-2 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
-                                    Read More 😎
+                                    My Socials 😎
                                 </a>
                             </div>
                         </div>
