@@ -2,8 +2,8 @@ import { FaDownload } from "react-icons/fa";
 
 const menus = [
     {id:1, name:'About', url:'#about'},
-    {id:2, name:'Experience', url:'#experience'},
     {id:3, name:'Work', url:'#work'},
+    {id:2, name:'Projects', url:'#projects'},
     {id:4, name:'Contact', url:'#contact'},
     {id:5, name:'Socials', url:'#'},
 ]
@@ -17,10 +17,13 @@ function AppBar({scrolldown}){
         <div className={scrolldown ? topClassScroll : topClass}>
 
             <div className="flex grow w-full items-center justify-between md:gap-4">
-                <div className="text-yellow-1 font-roboto font-bold text-3xl flex "> CJ. </div>
-                <a href="cv" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
+                <div className="text-yellow-1 font-roboto font-bold text-2xl flex flex-col"> 
+                    <div> SURAFEL KINDU. </div>
+                    {/* <div className="text-stone-400 font-roboto text-sm font-normal"> You can call me CJ </div> */}
+                </div>
+                <a href="/assets/resume/myresume.pdf" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
                     <div className="flex gap-2 items-center">
-                        CV <FaDownload/>
+                        Resume <FaDownload/>
                     </div>
                 </a>
             </div>

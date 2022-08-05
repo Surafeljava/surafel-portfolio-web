@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="cv" element={<ResumePage />} />
+        <Route path="resume" element={<ResumePage />} />
       </Routes>
     </BrowserRouter>
   );

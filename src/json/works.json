@@ -1,0 +1,84 @@
+{
+    "works": [
+        {
+            "id": 1,
+            "image": "africrowds.png",
+            "name": "EQUB Financial Tech.",
+            "title": "Senior Front-End Developer",
+            "link": "https://www.equb.app/",
+            "from": "March 2021",
+            "to": "April 2022",
+            "idid": "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications.",
+            "techs": [
+                "Flutter",
+                "Firebase"
+            ],
+            "source": "https://github.com/equbapp/equb_app"
+        },
+        {
+            "id": 2,
+            "image": "africrowds.png",
+            "name": "Africrowds",
+            "title": "Web Front-End Developer",
+            "link": "https://africrowds.netlify.app/",
+            "from": "December 2021",
+            "to": "June 2022",
+            "idid": "I worked on a crow funding platform for startups in Africa. I am using Reactjs with TypeScript for the development of the website.",
+            "techs": [
+                "Reactjs",
+                "Material UI"
+            ],
+            "source": "https://github.com/Equb4Startups/equb_4_startups_website"
+        },
+        {
+            "id": 3,
+            "image": "africrowds.png",
+            "name": "Chapa",
+            "title": "Front-End Developer & UI/UX Designer",
+            "link": "https://chapa.co/",
+            "from": "Dec 2021",
+            "to": "April 2022",
+            "idid": "A Fintech startup working to bring a better digital payment system for the developers and service places in Ethiopia. I used Reactjs and ReactNative while working in this company.",
+            "techs": [
+                "Reactjs",
+                "Material UI",
+                "Firebase",
+                "Adobe XD"
+            ],
+            "source": "https://github.com/Surafeljava/andu_portfolio"
+        },
+        {
+            "id": 4,
+            "image": "tebesa.png",
+            "name": "GDG Addis",
+            "title": "Creative Design Team Leader",
+            "link": "https://www.gdgaddis.dev/team",
+            "from": "Sep 2018",
+            "to": "Present",
+            "idid": "Google Developers Group in Addis Ababa.",
+            "techs": [
+                "Adobe Illustrator",
+                "Adobe Photoshop",
+                "Adobe XD",
+                "Adobe Indesign"
+            ],
+            "source": ""
+        },
+        {
+            "id": 5,
+            "image": "tebesa.png",
+            "name": "Tebesa Dating",
+            "title": "Mobile Application Developer",
+            "link": "https://play.google.com/store/apps/details?id=com.tebesa.dating",
+            "from": "Jul 2020",
+            "to": "Aug 2021",
+            "idid": "Tebesa Dating is a dating application for the Ethiopian community who are living abroad.",
+            "techs": [
+                "Flutter",
+                "Firebase",
+                "Adobe XD"
+            ],
+            "source": "https://github.com/Surafeljava/tebesaDating"
+        }
+    ]
+}
