@@ -24,12 +24,12 @@ function Contact() {
                         <textarea type="text" cols="30" rows="5" placeholder="Message" className="rounded-lg py-3 px-4 text-darker-1"/>
                         <div className="flex items-center gap-4">
                             <div className="flex group items-center">
-                                <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
+                                <FaChevronRight className='text-red-400 w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <button onClick={() => {
                                     console.log("Sending Message");
                                     setMessageSent(true);
                                 }}
-                                className="px-10 py-3 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
+                                className="px-6 py-2 rounded-lg font-roboto text-white text-md bg-darker-2 ml-0 group-hover:ml-2 group-hover:text-red-400 duration-200">
                                     Send Message
                                 </button>
                             </div>

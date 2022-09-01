@@ -17,11 +17,11 @@ function AppBar({scrolldown}){
         <div className={scrolldown ? topClassScroll : topClass}>
 
             <div className="flex grow w-full items-center justify-between md:gap-4">
-                <div className="text-yellow-1 font-roboto font-bold text-2xl flex flex-col"> 
-                    <div> SURAFEL KINDU </div>
+                <div className="text-red-400 font-roboto font-bold text-2xl flex flex-col"> 
+                    <div> CJ. </div>
                     {/* <div className="text-stone-400 font-roboto text-sm font-normal"> You can call me CJ </div> */}
                 </div>
-                <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
+                <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-red-400">
                     <div className="flex gap-2 items-center">
                         Resume <FaDownload/>
                     </div>
@@ -32,7 +32,7 @@ function AppBar({scrolldown}){
                 {menus.map((menu) => {
                     return (
                         <li id={menu.id}>
-                            <a href={menu.url} className="tracking-wider md:tracking-widest text-md font-thin text-light-1 inline hover:text-yellow-1 hover:cursor-pointer font-roboto">
+                            <a href={menu.url} className="tracking-wider md:tracking-widest text-md font-thin text-light-1 inline hover:text-red-400 hover:cursor-pointer font-roboto">
                                 {menu.name}
                             </a>
                         </li>
