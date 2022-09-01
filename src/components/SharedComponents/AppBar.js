@@ -4,6 +4,7 @@ const menus = [
     {id:1, name:'About', url:'#about'},
     {id:3, name:'Work', url:'#work'},
     {id:2, name:'Projects', url:'#projects'},
+    {id:2, name:'Certificates', url:'#certificates'},
     {id:4, name:'Contact', url:'#contact'},
     {id:5, name:'Socials', url:'#'},
 ]
@@ -21,7 +22,7 @@ function AppBar({scrolldown}){
                     <div> SURAFEL KINDU. </div>
                     {/* <div className="text-stone-400 font-roboto text-sm font-normal"> You can call me CJ </div> */}
                 </div>
-                <a href="/assets/resume/myresume.pdf" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
+                <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" className="px-2 py-1 rounded-md bg-black text-light-1 font-roboto text-md hover:text-yellow-1">
                     <div className="flex gap-2 items-center">
                         Resume <FaDownload/>
                     </div>

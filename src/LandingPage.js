@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { AppBar, HomePage, Work, Contact, Experience } from './components';
+import { AppBar, HomePage, Work, Contact, Experience, Certification } from './components';
 
 import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -46,6 +46,7 @@ function LandingPage() {
       </div>
       <Work/>
       <Experience/>
+      <Certification/>
       <Contact/>
       <div className="text-slate-800 h-10 flex justify-center my-2">Made with ❤ - by Surafel Kindu</div>
 

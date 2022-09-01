@@ -16,7 +16,7 @@ const techs = [
 
 function HomePage(){
     return (
-        <div id="about" className="text-stone-300 w-full h-full grow grid grid-cols-12 grid-flow-row justify-start items-center gap-2">
+        <div id="about" className="text-stone-300 w-full min-h-screen grow grid grid-cols-12 grid-flow-row justify-start items-center gap-2">
 
             <div className="col-span-12 md:col-span-8 lg:col-span-7 flex flex-col px-2 md:px-6 text-darker-2 rounded-xl items-start">
                 
@@ -32,8 +32,7 @@ function HomePage(){
                         <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal"> Software Engineer | UI/UX Designer</p>
                         <br />
                         <div className="font-roboto font-normal text-md text-slate-500">
-                            Self-driven and passionate software engineer. Research enthusiast on AI, specifically on 
-                            <a href="https://huggingface.co/surafelkindu" className='text-red-400 hover:underline duration-500 font-bold'> NLP </a>. 
+                            Self-driven and passionate software engineer. Research enthusiast on AI, specifically on NLP. 
                             Fullstack web and mobile application developer. I also love to work on Graphics UI/UX Designing.
                         </div>
 
@@ -57,7 +56,7 @@ function HomePage(){
                         <div className="flex gap-6">
                             <div className="flex group items-center">
                                 <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
-                                <a href="resume" 
+                                <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" 
                                 className="px-4 py-2 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
                                     My Resume 📄
                                 </a>

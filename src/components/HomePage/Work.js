@@ -21,7 +21,7 @@ function Work(){
     }, []);
 
     return (
-        <div id="work" className="text-stone-300 w-full grow grid grid-cols-12 gap-4 justify-center md:py-8 md:px-14 md:mb-8">
+        <div id="work" className="text-stone-300 w-full min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8 md:px-14 md:mb-8 md:pt-24">
 
             {/* <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
             </div> */}
@@ -31,9 +31,10 @@ function Work(){
                     <FaChevronRight className="text-transparent group-hover:text-red-500 font-normal text-sm group-hover:text-xl md:text-2xl inline -ml-8 group-hover:ml-0 duration-500"/> 
                     Where I've Worked 
                 </div> */}
-                <div className="font-bold text-2xl text-darker-2 mb-8">
-                    Where I've Worked 
+                <div className="font-bold text-5xl text-darker-2 mb-8">
+                    Work Experience
                 </div>
+                <br />
                 <div className="w-full grid grid-cols-12 grid-flow-row gap-6">
                     {(works.length > 0 && selectedWork !== null) && (
                         <div className="col-span-12 md:col-span-2 w-full flex grow md:flex-col font-roboto font-normal text-md gap-2 overflow-scroll md:overflow-auto">
