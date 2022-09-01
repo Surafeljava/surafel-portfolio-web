@@ -5,13 +5,13 @@ import profile from '../../asset/profile.png';
 import { FaChevronRight } from "react-icons/fa";
 
 const techs = [
-    {id:1, name: "Reactjs", link: "https://reactjs.org/"}, 
-    {id:2, name: "Node.js/Express", link: "https://nodejs.org/en/"}, 
-    {id:3, name: "Mongodb", link: "https://www.mongodb.com/"}, 
-    {id:4, name: "Graphql", link: "https://graphql.org/"}, 
-    {id:5, name: "Postgres SQL", link: "https://www.postgresql.org/"}, 
-    {id:6, name: "Flutter", link: "https://flutter.dev/"},
-    {id:7, name: "Tensorflow", link: "https://www.tensorflow.org/"},
+    {id:1, name: "Reactjs"}, 
+    {id:2, name: "Node.js/Express"}, 
+    {id:3, name: "Mongodb"}, 
+    {id:4, name: "Graphql"}, 
+    {id:5, name: "Postgres SQL"}, 
+    {id:6, name: "Flutter"},
+    {id:7, name: "Tensorflow"},
 ];
 
 function HomePage(){
@@ -32,8 +32,8 @@ function HomePage(){
                         <p className="text-xl md:text-2xl text-slate-500 font-roboto font-normal"> Software Engineer | UI/UX Designer</p>
                         <br />
                         <div className="font-roboto font-normal text-md text-slate-500">
-                            Self-driven and passionate software engineer. Research enthusiast on AI, specifically on NLP. 
-                            Fullstack web and mobile application developer. I also love to work on Graphics UI/UX Designing.
+                            Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
+                            I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
                         </div>
 
                         <br />
@@ -43,11 +43,11 @@ function HomePage(){
                         <div className="grid grid-cols-6">
                             {techs.map((tech) => {
                                 return (
-                                    <a href={tech.link} id={tech.id} className="col-span-2 flex items-center gap-2 group py-1">
+                                    <div id={tech.id} className="col-span-2 flex items-center gap-2 group py-1 hover:cursor-default">
                                         <FaChevronRight className='w-2 h-2 m-0 opacity-100 group-hover:opacity-0 group-hover:m-1 duration-500'/> 
                                         <div className="text-dark-1 group-hover:text-red-500 font-mono">{tech.name}</div>
                                         <FaChevronRight className='w-2 h-2 -m-2 opacity-0 group-hover:opacity-100 group-hover:m-0 duration-500'/> 
-                                    </a>
+                                    </div>
                                 );
                             })}
                         </div>

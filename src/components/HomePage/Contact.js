@@ -1,41 +1,47 @@
-import { FaChevronRight } from "react-icons/fa";
+import React, {useState} from "react";
+
+import { FaChevronRight} from "react-icons/fa";
 
 function Contact() {
+
+    const [messageSent, setMessageSent] = useState(false);
+
     return (
         <div id="contact" className="text-stone-300 w-full flex flex-col gap-2  px-20 mb-8 mt-10 font-roboto"> 
-            <div className="text-2xl md:text-4xl text-darker-2 font-roboto font-bold group tracking-widest mx-0 flex items-center gap-2 mb-8 md:py-8 md:px-4 md:w-full md:bg-gradient-to-r md:from-darker-tr md:to-light-1 md:border-l-2 md:border-red-500"> 
-                <FaChevronRight className="text-transparent group-hover:text-red-500 font-normal text-sm group-hover:text-xl md:text-2xl inline -ml-8 group-hover:ml-0 duration-500"/> 
+            <div className="font-bold text-5xl text-darker-2">
                 Let's Chat
             </div>
+            <br />
             <div className="flex">
-                <div className="flex flex-col gap-2">
-                    <div className="text-xl font-semibold text-slate-600">
-                        +251 942 85 97 23
-                    </div>
-                    <div className="text-md font-normal text-slate-500">
-                        Addis Ababa, Ethiopia
-                    </div>
-                    <div className="flex my-8">
-                        <div className="flex group items-center">
-                            <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
-                            <a href="mailto:surafel.mulaw@gmail.com" 
-                            className="px-4 py-2 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
-                                Send an Email
-                            </a>
+                <div className="grid grid-cols-6 gap-4 w-full">
+                    
+                    <div className="col-span-2 flex flex-col gap-4">
+                        <div className="flex gap-4 w-full">
+                            <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="First Name" />
+                            <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="Last Name" />
+                        </div>
+                        <input type="email" className="rounded-lg py-3 px-4 text-darker-1" placeholder="Email" />
+                        <textarea type="text" cols="30" rows="5" placeholder="Message" className="rounded-lg py-3 px-4 text-darker-1"/>
+                        <div className="flex items-center gap-4">
+                            <div className="flex group items-center">
+                                <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
+                                <button onClick={() => {
+                                    console.log("Sending Message");
+                                    setMessageSent(true);
+                                }}
+                                className="px-10 py-3 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
+                                    Send Message
+                                </button>
+                            </div>
+                            {messageSent && (
+                            <div className="font-roboto text-darker-2 text-md">
+                                Thank you for your message!
+                            </div>)}
                         </div>
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-2">
-                    <input type="email" className="rounded-lg" placeholder="Email" />
-                    <input type="text" className="rounded-lg" placeholder="Message..." />
-                    <div className="flex group items-center">
-                        <a href="mailto:surafel.mulaw@gmail.com" 
-                        className="px-4 py-2 rounded-lg font-roboto text-darker-1 text-md bg-yellow-1 ml-0 group-hover:ml-2 group-hover:bg-darker-1 group-hover:text-light-1 duration-200">
-                            Send an Email
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     );
