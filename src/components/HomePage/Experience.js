@@ -18,7 +18,7 @@ function Experience() {
                 Personal Projects
             </div>
             {projects !== null && (
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
                     {projects.map(({title, description, link, techs, github}) => {
                         return (
                             <a href={link}>

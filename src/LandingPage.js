@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { AppBar, HomePage, Work, Contact, Experience, Certification } from './components';
+import { AppBar, HomePage, Work, Contact, Experience, Certification, ResumeButton } from './components';
 
 import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
@@ -8,6 +8,7 @@ function LandingPage() {
   
   let lastYOffset = 0;
   const [scrollUp, setScrollUp] = useState(true);
+  const [scrollZero, setScrollZero] = useState(true);
   
   const onScroll = (event) => {
     
@@ -15,8 +16,10 @@ function LandingPage() {
     
     if (yoff === 0){
       setScrollUp(true);
+      setScrollZero(true);
       lastYOffset = 0;
     }else{
+      setScrollZero(false);
       if (yoff > lastYOffset){
         setScrollUp(false);
         lastYOffset = window.pageYOffset;
@@ -40,8 +43,9 @@ function LandingPage() {
 
   return (
     <div onScroll={onScroll} className="flex flex-col bg-light-1 px-20 items-center scroll-smooth">
-      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-40 md:pt-4">
-        <AppBar scrolldown={!scrollUp}/>
+      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-14 md:pt-4">
+        <AppBar scrolldown={!scrollUp} scrollZero={scrollZero}/>
+        <ResumeButton/>
         <HomePage/>
       </div>
       <Work/>

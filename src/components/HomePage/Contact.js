@@ -2,6 +2,8 @@ import React, {useState} from "react";
 
 import { FaChevronRight} from "react-icons/fa";
 
+// import Developer from "../../asset/others/developer.svg";
+
 function Contact() {
 
     const [messageSent, setMessageSent] = useState(false);
@@ -15,12 +17,12 @@ function Contact() {
             <div className="flex w-full">
                 <div className="grid grid-cols-6 gap-4 w-full">
                     
-                    <div className="col-span-6 md:col-span-3 lg:col-span-2 flex flex-col gap-4">
+                    <div className="col-span-6 md:col-span4 lg:col-span-3 xl:col-span-2 flex flex-col gap-4">
                         {/* <div className="flex gap-4 w-full">
                             <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="First Name" />
                             <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="Last Name" />
                         </div> */}
-                        <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="Full name" />
+                        <input type="text" className="rounded-lg py-3 px-4 text-darker-1" placeholder="Full name" />
                         <input type="email" className="rounded-lg py-3 px-4 text-darker-1" placeholder="Email" />
                         <textarea type="text" cols="30" rows="5" placeholder="Message" className="rounded-lg py-3 px-4 text-darker-1"/>
                         <div className="flex items-center justify-center md:justify-start gap-4">
@@ -40,6 +42,11 @@ function Contact() {
                             </div>)}
                         </div>
                     </div>
+
+                    {/* <div className="hidden md:flex">
+                        <img src={Developer} alt="dev" />
+                    </div> */}
+                    
                 </div>
 
                 
