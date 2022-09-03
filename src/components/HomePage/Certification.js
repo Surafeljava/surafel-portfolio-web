@@ -19,13 +19,13 @@ function Certification() {
             </div>
             <br />
             {certificates!==null && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                     {certificates.map(({name, org, date, id, link, techs}) => {
                         return (
                             <a href={link}>
                                 <div className="col-span-1 h-full flex hover:-translate-y-2 hover:shadow-lg rounded-2xl duration-300 hover:cursor-pointer group">
                                     <div className="w-full flex flex-col p-3 md:p-6 rounded-lg md:rounded-2xl bg-darker-2">
-                                        <div className="flex justify-between mb-4 hidden md:flex">
+                                        <div className="flex justify-between mb-4">
                                             <FiAward className="w-6 h-6 md:w-10 md:h-10 text-red-400"/>
                                             <div className="flex gap-4">
                                                 <a href={link} className="hover:text-red-400"> <FiArrowRightCircle className="w-4 h-4 md:w-8 md:h-8 "/> </a>

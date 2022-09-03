@@ -13,7 +13,7 @@ const menus = [
 // FaDownload
 
 function AppBar({scrolldown, scrollZero}){
-    const [openSize, setOpenSide] = useState(true);
+    const [openSize, setOpenSide] = useState(false);
 
     const topClass = "fixed top-0 z-50 bg-darker-1 flex flex-col md:flex-row w-full md:h-24 items-center justify-center gap-6 px-8 py-6 md:py-0 duration-500 drop-shadow-xl";
     const  topClassScroll = topClass + " -translate-y-44 md:-translate-y-24 duration-500";
