@@ -57,30 +57,32 @@ function Work(){
                     )}
 
                     {/* Work Images Here */}
-                    <div className="col-span-7 w-full h-3/4 relative">
+                    <div className="col-span-7 w-full h-3/4 relative group">
                         {selectedWork!==null && (
                             <>
                             <img src={`/assets/works/${selectedWork.image}`} alt="work pic" className='absolute top-0 left-0 w-full h-full object-cover rounded-xl z-10'/>
                             <div className="w-full h-2/3 bg-gradient-to-t from-black-50 to-black-0 rounded-b-xl absolute left-0 bottom-0 z-20 flex flex-col justify-end p-6">
-                                <div className="text-4xl font-bold text-white">
-                                    {selectedWork.name}
+                                <div className="flex flex-col gap-2 -mb-10 group-hover:mb-0 ease-out">
+                                    <div className="text-4xl font-bold text-white">
+                                        {selectedWork.name}
+                                    </div>
+                                    <a href={selectedWork.link} className="text-xl font-normal text-white mb-6">
+                                        {selectedWork.link}
+                                    </a>
                                 </div>
-                                <a href={selectedWork.link} className="text-xl font-normal text-white mb-6">
-                                    {selectedWork.link}
-                                </a>
-                                <div className="flex justify-between">
-                                    <a href={selectedWork.source} className="group flex justify-end items-center gap-2">
-                                        <FiGithub className='text-2xl text-white group-hover:scale-125 duration-200'/>
+                                <div className="flex justify-between translate-y-10 invisible group-hover:visible group-hover:translate-y-0 duration-200">
+                                    <a href={selectedWork.source} className="group hover:scale-110 flex justify-end items-center gap-2">
+                                        <FiGithub className='text-xl text-white'/>
                                         <div className="text-white opacity-0 translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 duration-200">
                                             Source code
                                         </div>
                                     </a>
 
-                                    <a href={selectedWork.link} className="flex group justify-end items-center gap-2">
+                                    <a href={selectedWork.link} className="flex hover:scale-125 justify-end items-center gap-2">
                                         <div className="text-white opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 duration-200">
                                             Preview
                                         </div>
-                                        <FiArrowRightCircle className='text-2xl text-white group-hover:scale-125 duration-200'/>
+                                        <FiArrowRightCircle className='text-xl text-white'/>
                                     </a>
                                 </div>
                             </div>

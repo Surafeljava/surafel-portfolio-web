@@ -17,13 +17,13 @@
         },
         {
             "id": 2,
-            "image": "equbapp.png",
+            "image": "africrowds.png",
             "name": "Africrowds",
             "title": "Web Front-End Developer",
             "link": "https://africrowds.netlify.app/",
             "from": "December 2021",
             "to": "June 2022",
-            "idid": "I worked on a crow funding platform for startups in Africa. I am using Reactjs with TypeScript for the development of the website.",
+            "idid": "I developed a crow funding platform for startups in Africa. The platform is estimated to help more than 50 startups get funding.",
             "techs": [
                 "Reactjs",
                 "Material UI"
@@ -32,7 +32,7 @@
         },
         {
             "id": 3,
-            "image": "equbapp.png",
+            "image": "chapa.png",
             "name": "Chapa",
             "title": "Front-End Developer & UI/UX Designer",
             "link": "https://chapa.co/",
