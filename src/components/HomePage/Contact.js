@@ -7,22 +7,23 @@ function Contact() {
     const [messageSent, setMessageSent] = useState(false);
 
     return (
-        <div id="contact" className="text-stone-300 w-full flex flex-col gap-2  px-20 mb-8 mt-10 font-roboto"> 
+        <div id="contact" className="text-stone-300 w-full flex flex-col gap-2 md:px-20 mb-8 mt-10 font-roboto"> 
             <div className="font-bold text-5xl text-darker-2">
                 Let's Chat
             </div>
             <br />
-            <div className="flex">
+            <div className="flex w-full">
                 <div className="grid grid-cols-6 gap-4 w-full">
                     
-                    <div className="col-span-2 flex flex-col gap-4">
-                        <div className="flex gap-4 w-full">
+                    <div className="col-span-6 md:col-span-3 lg:col-span-2 flex flex-col gap-4">
+                        {/* <div className="flex gap-4 w-full">
                             <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="First Name" />
                             <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="Last Name" />
-                        </div>
+                        </div> */}
+                        <input type="text" className="grow rounded-lg py-3 px-4 text-darker-1" placeholder="Full name" />
                         <input type="email" className="rounded-lg py-3 px-4 text-darker-1" placeholder="Email" />
                         <textarea type="text" cols="30" rows="5" placeholder="Message" className="rounded-lg py-3 px-4 text-darker-1"/>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center justify-center md:justify-start gap-4">
                             <div className="flex group items-center">
                                 <FaChevronRight className='text-red-400 w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <button onClick={() => {

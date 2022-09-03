@@ -2,7 +2,7 @@
     "works": [
         {
             "id": 1,
-            "image": "equbapp.png",
+            "image": "equbapp.webp",
             "name": "EQUB Financial Technologies",
             "title": "Senior Front-End Developer",
             "link": "https://www.equb.app/",
@@ -17,7 +17,7 @@
         },
         {
             "id": 2,
-            "image": "africrowds.png",
+            "image": "africrowds.webp",
             "name": "Africrowds",
             "title": "Web Front-End Developer",
             "link": "https://africrowds.netlify.app/",
@@ -32,7 +32,7 @@
         },
         {
             "id": 3,
-            "image": "chapa.png",
+            "image": "chapa.webp",
             "name": "Chapa",
             "title": "Front-End Developer & UI/UX Designer",
             "link": "https://chapa.co/",
@@ -49,7 +49,7 @@
         },
         {
             "id": 4,
-            "image": "equbapp.png",
+            "image": "equbapp.webp",
             "name": "GDG Addis",
             "title": "Creative Design Team Leader",
             "link": "https://www.gdgaddis.dev/team",
@@ -66,7 +66,7 @@
         },
         {
             "id": 5,
-            "image": "equbapp.png",
+            "image": "equbapp.webp",
             "name": "Tebesa Dating",
             "title": "Mobile Application Developer",
             "link": "https://play.google.com/store/apps/details?id=com.tebesa.dating",
