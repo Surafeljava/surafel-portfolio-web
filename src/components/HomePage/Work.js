@@ -22,41 +22,34 @@ function Work(){
     }, []);
 
     return (
-        <div id="work" className="text-stone-300 w-full min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8  md:mb-8 md:pt-24">
-
-            {/* <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
-            </div> */}
+        <div id="work" className="text-stone-300 w-full h-auto md:min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8  md:mb-8 md:pt-24">
 
             <div className="w-full col-span-12 flex flex-col items-center md:items-start md:px-6 text-darker-2 rounded-xl items-start">
-                {/* <div className="text-2xl md:text-4xl text-darker-2 font-roboto font-bold group tracking-widest mx-0 flex items-center gap-2 mb-8 md:py-8 md:px-4 md:w-full md:bg-gradient-to-r md:from-darker-tr md:to-light-1 md:border-l-2 md:border-red-500"> 
-                    <FaChevronRight className="text-transparent group-hover:text-red-500 font-normal text-sm group-hover:text-xl md:text-2xl inline -ml-8 group-hover:ml-0 duration-500"/> 
-                    Where I've Worked 
-                </div> */}
                 <div className="font-bold text-3xl md:text-5xl text-darker-2 mb-8">
                     Work Experience
                 </div>
-                <div className="w-full h-full grid grid-cols-12 gap-4 md:gap-6">
+                <div className="w-full md:h-full grid grid-cols-12 gap-4 md:gap-6">
                     {(works.length > 0 && selectedWork !== null) && (
                         <div className="col-span-12 xl:col-span-2 w-full flex h-full lg:h-3/4 xl:flex-col md:justify-between font-roboto font-normal text-md gap-2 overflow-scroll md:overflow-auto">
                             {works.map((work) => {
                                 return (
                                     <button onClick={() => setSelectedWork(work)} id={work.id} 
-                                    className={"grow flex gap-1 justify-start items-center px-2 py-1 lg:px-4 lg:py-4 duration-200 ease-in-out group text-sm md:text-md rounded-lg" + 
+                                    className={"grow w-full md:w-auto flex gap-1 justify-start items-center px-4 py-3 lg:px-4 lg:py-4 duration-200 ease-in-out group text-sm md:text-md rounded-lg" + 
                                     (work.id===selectedWork.id ? " text-white bg-darker-2 hover:bg-darker-2" : " text-darker-2 hover:bg-darker-tr")}>
                                         <FiChevronRight className='inline -ml-4 invisible group-hover:visible group-hover:ml-0 duration-200 ease-in-out'/>
                                         <div className="flex flex-col items-start">
-                                            <div className='text-sm md:text-lg md:font-bold text-left'>{work.name}</div>
-                                            <div className='text-md text-left hidden md:block'>{work.title}</div>
+                                            <div className='text-sm md:text-lg md:font-bold text-left hidden md:flex'>{work.name}</div>
+                                            <div className='text-sm md:text-lg md:font-bold text-left md:hidden'>{work.shortName}</div>
+                                            <div className='text-md text-left hidden md:flex'>{work.title}</div>
                                         </div>
                                     </button>
                                 );
                             })}
-                            
                         </div>
                     )}
 
                     {/* Work Images Here */}
-                    <div className="col-span-12 md:col-span-7 w-full h-60 md:h-full xl:h-3/4 relative group">
+                    <div className="col-span-12 hidden md:flex md:col-span-7 w-full h-60 md:h-full xl:h-3/4 relative group">
                         {selectedWork!==null && (
                             <>
                             <img src={`/assets/works/${selectedWork.image}`} alt="work pic" className='absolute top-0 left-0 w-full h-full object-cover rounded-xl z-10'/>
@@ -65,23 +58,8 @@ function Work(){
                                     <div className="text-xl md:text-4xl font-bold text-white">
                                         {selectedWork.name}
                                     </div>
-                                    <a href={selectedWork.link} className="text-md md:text-xl font-normal text-white mb-6">
+                                    <a href={selectedWork.link} className="text-md md:text-xl font-normal text-white mb-0">
                                         {selectedWork.link}
-                                    </a>
-                                </div>
-                                <div className="flex justify-between md:hidden group-hover:flex duration-200">
-                                    <a href={selectedWork.source} className="group hover:scale-110 flex justify-end items-center gap-2">
-                                        <FiGithub className='text-xl text-white'/>
-                                        <div className="text-white opacity-0 translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 duration-200">
-                                            Source code
-                                        </div>
-                                    </a>
-
-                                    <a href={selectedWork.link} className="flex hover:scale-125 justify-end items-center gap-2">
-                                        <div className="text-white opacity-0 -translate-x-8 group-hover:opacity-100 group-hover:translate-x-0 duration-200">
-                                            Preview
-                                        </div>
-                                        <FiArrowRightCircle className='text-xl text-white'/>
                                     </a>
                                 </div>
                             </div>
@@ -127,6 +105,16 @@ function Work(){
                                         </div>
                                     );
                                 })}
+
+                                <div className="flex justify-between duration-200 mt-6">
+                                    <a href={selectedWork.source} className="group hover:scale-110 flex justify-end items-center gap-2 duration-200">
+                                        <FiGithub className='text-2xl text-red-400'/>
+                                    </a>
+
+                                    <a href={selectedWork.link} className="flex hover:scale-125 justify-end items-center gap-2 duration-200">
+                                        <FiArrowRightCircle className='text-2xl text-red-400'/>
+                                    </a>
+                                </div>
 
                                 {/* <br />
 
