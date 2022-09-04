@@ -43,7 +43,7 @@ function LandingPage() {
 
   return (
     <div onScroll={onScroll} className="flex flex-col bg-light-1 px-4 md:px-20 items-center scroll-smooth gap-6">
-      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-20 md:pt-4">
+      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-24 md:pt-4">
         <AppBar scrolldown={!scrollUp} scrollZero={scrollZero}/>
         <ResumeButton/>
         <HomePage/>
