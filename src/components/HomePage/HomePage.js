@@ -24,14 +24,14 @@ function HomePage(){
                     <div className="col-span-12 md:col-span-4 lg:col-span-3 w-full h-full flex flex-col">
                         <img src={profile} alt="profile pic" className="h-full w-full rounded-xl hover:cursor-pointer duration-300 object-cover" />
                     </div>
-                    <div className="col-span-12 md:col-span-8 lg:col-span-9 w-full flex flex-col">
-                        <p className="text-2xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4">👋 Hi, I'm </p>
+                    <div className="col-span-12 md:col-span-8 lg:col-span-9 w-full flex flex-col items-center md:items-start">
+                        <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4">👋 Hi, I'm </p>
                         <br />
                         <a href="https://linktr.ee/surafelkindu"  
                         className="text-4xl md:text-7xl lg:text-8xl font-roboto font-bold">SURAFEL KINDU</a>
-                        <p className="text-xl md:text-4xl text-slate-500 font-roboto font-bold"> Software Engineer | UI/UX Designer</p>
+                        <p className="text-xl md:text-4xl text-slate-500 font-roboto font-thin"> Software Engineer | UI/UX Designer</p>
                         <br />
-                        <div className="font-roboto font-normal text-md md:text-lg text-slate-500">
+                        <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center md:text-left">
                             Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
                             I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
                         </div>

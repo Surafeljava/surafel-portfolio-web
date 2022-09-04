@@ -42,8 +42,8 @@ function LandingPage() {
   }, []);
 
   return (
-    <div onScroll={onScroll} className="flex flex-col bg-light-1 px-4 md:px-20 items-center scroll-smooth">
-      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-14 md:pt-4">
+    <div onScroll={onScroll} className="flex flex-col bg-light-1 px-4 md:px-20 items-center scroll-smooth gap-6">
+      <div className="flex flex-col w-full items-center justify-center md:min-h-screen px-0 md:px-12 pt-20 md:pt-4">
         <AppBar scrolldown={!scrollUp} scrollZero={scrollZero}/>
         <ResumeButton/>
         <HomePage/>
@@ -68,19 +68,19 @@ function LandingPage() {
         {/* <div className="visible grow md:invisible"></div> */}
 
         <a href="https://github.com/Surafeljava" className='w-6 h-6 group'>
-          <FaGithub className='w-6 h-6 text-slate-500 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
+          <FaGithub className='w-6 h-6 text-darker-2 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
         </a>
 
         <a href="https://www.instagram.com/surafel_kindu/" className='w-6 h-6 group'>
-          <FaInstagram className='w-6 h-6 text-slate-500 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
+          <FaInstagram className='w-6 h-6 text-darker-2 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
         </a>
 
         <a href="https://www.linkedin.com/in/surafel-kindu-11889415b/" className='w-6 h-6 group'>
-          <FaLinkedinIn className='w-6 h-6 text-slate-500 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
+          <FaLinkedinIn className='w-6 h-6 text-darker-2 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
         </a>
 
         <a href="https://twitter.com/surafel_kindu" className='w-6 h-6 group'>
-          <FaTwitter className='w-6 h-6 text-slate-500 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
+          <FaTwitter className='w-6 h-6 text-darker-2 group-hover:text-red-400 duration-300 group-hover:-mt-2'/>
         </a>
 
         <div className="grow"></div>

@@ -13,7 +13,7 @@ function Certification() {
     }, []);
 
     return (
-        <div id="certificates" className="text-slate-400 font-roboto w-full flex flex-col gap-0 md:gap-4 justify-start md:py-8 md:px-20 md:mb-32 md:pt-24"> 
+        <div id="certificates" className="text-slate-400 font-roboto w-full flex flex-col items-center md:items-start gap-0 md:gap-4 justify-start md:py-8 md:px-20 md:mb-32 md:pt-24"> 
             <div className="font-bold text-3xl md:text-5xl text-darker-2">
                 Certifications
             </div>

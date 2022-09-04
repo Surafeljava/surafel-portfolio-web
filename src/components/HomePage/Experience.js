@@ -13,7 +13,7 @@ function Experience() {
     }, []);
 
     return (
-        <div id="projects" className="text-slate-400 font-roboto w-full flex flex-col gap-4 justify-center px-0 mb-4 md:py-8 md:px-20 md:mb-10"> 
+        <div id="projects" className="text-slate-400 font-roboto w-full flex flex-col items-center md:items-start gap-4 justify-center px-0 mb-4 md:py-8 md:px-20 md:mb-10"> 
             <div className="font-bold text-3xl md:text-5xl text-darker-2">
                 Personal Projects
             </div>

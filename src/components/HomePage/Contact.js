@@ -9,8 +9,8 @@ function Contact() {
     const [messageSent, setMessageSent] = useState(false);
 
     return (
-        <div id="contact" className="text-stone-300 w-full flex flex-col gap-2 md:px-20 mb-8 mt-10 font-roboto"> 
-            <div className="font-bold text-5xl text-darker-2">
+        <div id="contact" className="text-stone-300 w-full flex flex-col items-center md:items-start gap-2 md:px-20 mb-8 mt-10 font-roboto"> 
+            <div className="font-bold text-3xl md:text-5xl text-darker-2">
                 Let's Chat
             </div>
             <br />

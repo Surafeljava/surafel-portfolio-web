@@ -27,7 +27,7 @@ function Work(){
             {/* <div className="col-span-12 md:col-span-2 flex justify-center items-center -rotate-90 text-slate-500 text-8xl font-bold">
             </div> */}
 
-            <div className="w-full col-span-12 flex flex-col md:px-6 text-darker-2 rounded-xl items-start">
+            <div className="w-full col-span-12 flex flex-col items-center md:items-start md:px-6 text-darker-2 rounded-xl items-start">
                 {/* <div className="text-2xl md:text-4xl text-darker-2 font-roboto font-bold group tracking-widest mx-0 flex items-center gap-2 mb-8 md:py-8 md:px-4 md:w-full md:bg-gradient-to-r md:from-darker-tr md:to-light-1 md:border-l-2 md:border-red-500"> 
                     <FaChevronRight className="text-transparent group-hover:text-red-500 font-normal text-sm group-hover:text-xl md:text-2xl inline -ml-8 group-hover:ml-0 duration-500"/> 
                     Where I've Worked 
