@@ -13,7 +13,7 @@ function Work(){
     }, []);
 
     return (
-        <div id="work" className="text-stone-300 w-full h-auto md:min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8  md:mb-8 md:pt-24">
+        <div id="work" className="text-stone-300 w-full h-auto md:min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8 md:mb-8 md:pt-24 md:px-14">
 
             <div className="w-full col-span-12 flex flex-col items-center md:px-6 text-darker-2 rounded-xl">
                 <div className="font-bold text-3xl md:text-5xl text-darker-2 mb-8 md:mb-10">
@@ -32,7 +32,7 @@ function Work(){
                                     </div>
 
                                     {/* Top Right Button */}
-                                    <div className="flex items-center absolute top-0 right-0 z-50 p-4 md:p-6 gap-2 group">
+                                    <div className="flex items-center absolute top-0 right-0 z-40 p-4 md:p-6 gap-2 group">
                                         <button className="flex group items-center gap-4 px-4 py-2 bg-white text-sm md:text-md text-custom-dark font-space-grotesk font-bold">
                                             Read More
                                             <svg viewBox="0 0 53 16" fill="none" className="w-10 group-hover:ml-6 duration-200">
@@ -41,7 +41,7 @@ function Work(){
                                         </button>
                                     </div>
 
-                                    <div className="flex flex-col justify-end w-full h-full absolute top-0 right-0 z-40 gap-2 group">
+                                    <div className="flex flex-col justify-end w-full h-full absolute top-0 right-0 z-30 gap-2 group">
                                         <div className="flex flex-col gap-1 bg-white p-4 md:p-6 group-hover:translate-y-4 duration-200">
                                             <div className="flex flex-col">
                                                 <div className="text-black text-xl md:text-2xl font-bold font-space-grotesk">

@@ -1,6 +1,29 @@
 {
     "works": [
         {
+            "id": 0,
+            "image": "chapa.webp",
+            "name": "Securicom PLC",
+            "shortName": "Securicom",
+            "title": "Mobile Front-End Developer",
+            "link": "https://africrowds.netlify.app/",
+            "from": "September 2022",
+            "to": "Present",
+            "desc": "I am developing a mobile applications for an online auction system.",
+            "techs": [
+                "React Native",
+                "Tailwind Css",
+                "Redux"
+            ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg"
+            ],
+            "source": "https://github.com/Equb4Startups/equb_4_startups_website"
+        },
+        {
             "id": 1,
             "image": "africrowds.webp",
             "name": "Africrowds",
@@ -15,6 +38,7 @@
                 "Material UI"
             ],
             "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg",
                 "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
                 "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg",
                 "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-plain.svg"
