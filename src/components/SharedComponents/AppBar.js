@@ -39,11 +39,11 @@ function AppBar({scrolldown, scrollZero}){
                 )}
             </div>
 
-            <ul className="inline flex gap-6 md:gap-8 items-center justify-center h-full hidden md:flex">
+            <ul className="gap-6 md:gap-8 items-center justify-center h-full hidden md:flex">
                 {menus.map((menu) => {
                     return (
                         <li id={menu.id}>
-                            <a href={menu.url} className="group flex flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 inline hover:text-red-400 hover:cursor-pointer font-roboto duration-200">
+                            <a href={menu.url} className="group flex flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 hover:text-red-400 hover:cursor-pointer font-roboto duration-200">
                                 <div className="flex gap-2 items-center">
                                     {menu.icon} {menu.name}
                                 </div>
@@ -60,7 +60,7 @@ function AppBar({scrolldown, scrollZero}){
                     {menus.map((menu) => {
                         return (
                             <li id={menu.id}>
-                                <a href={menu.url} onClick={()=>setOpenSide(false)} className="group flex flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 inline hover:text-red-400 hover:cursor-pointer font-roboto duration-200">
+                                <a href={menu.url} onClick={()=>setOpenSide(false)} className="group flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 inline hover:text-red-400 hover:cursor-pointer font-roboto duration-200">
                                     <div className="flex gap-2 items-center">
                                         <span className="text-red-400">{menu.icon}</span> {menu.name}
                                     </div>

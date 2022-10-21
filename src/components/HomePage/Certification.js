@@ -58,7 +58,7 @@ function Certification() {
 
                                         {/* <br /> */}
                                         
-                                        <div className="flex flex-wrap gap-2 hidden md:flex mt-4">
+                                        <div className="flex-wrap gap-2 hidden md:flex mt-4">
                                             {techs.map((tech) => {
                                                 return (
                                                     <div className="text-sm font-normal font-mono mr-2 ">

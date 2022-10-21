@@ -41,7 +41,7 @@ function Experience() {
 
                                         <div className="grow"></div>
                                         
-                                        <div className="flex flex-wrap gap-2 hidden md:flex">
+                                        <div className="flex-wrap gap-2 hidden md:flex">
                                             {techs.map((tech) => {
                                                 return (
                                                     <div className="text-sm font-normal font-mono mr-2">

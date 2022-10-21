@@ -24,7 +24,7 @@ function Work(){
     return (
         <div id="work" className="text-stone-300 w-full h-auto md:min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8  md:mb-8 md:pt-24">
 
-            <div className="w-full col-span-12 flex flex-col items-center md:items-start md:px-6 text-darker-2 rounded-xl items-start">
+            <div className="w-full col-span-12 flex flex-col items-center md:items-start md:px-6 text-darker-2 rounded-xl">
                 <div className="font-bold text-3xl md:text-5xl text-darker-2 mb-8">
                     Work Experience
                 </div>

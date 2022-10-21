@@ -20,20 +20,20 @@ function HomePage(){
 
             <div className="col-span-12 md:col-span-12 lg:col-span-12 flex flex-col px-2 md:px-6 text-darker-2 rounded-xl items-start">
                 
-                <div className="grid grid-cols-12 grid-flow-row w-full gap-2 md:gap-6">
-                    <div className="col-span-12 md:col-span-4 lg:col-span-3 w-full h-full flex flex-col">
-                        <img src={profile} alt="profile pic" className="h-full w-full rounded-xl hover:cursor-pointer duration-300 object-cover" />
-                    </div>
-                    <div className="col-span-12 md:col-span-8 lg:col-span-9 w-full flex flex-col items-center md:items-start">
+                <div className="grid grid-cols-12 grid-flow-row w-full items-center justify-center">
+                    <div className="col-span-12 w-full flex flex-col items-center">
+                        <img src={profile} alt="profile pic" className=" w-64 rounded-full hover:cursor-pointer duration-300 object-cover border-8 border-white" />
                         <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4">👋 Hi, I'm </p>
                         <br />
                         <a href="https://linktr.ee/surafelkindu"  
                         className="text-4xl md:text-7xl lg:text-8xl font-roboto font-bold">SURAFEL KINDU</a>
                         <p className="text-xl md:text-4xl text-slate-500 font-roboto font-thin"> Software Engineer | UI/UX Designer</p>
                         <br />
-                        <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center md:text-left">
-                            Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
-                            I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
+                        <div className="flex justify-center">
+                            <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center md:w-2/3">
+                                Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
+                                I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
+                            </div>
                         </div>
 
                         <br />
