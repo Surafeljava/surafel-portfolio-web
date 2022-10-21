@@ -26,8 +26,8 @@ function HomePage(){
                         <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4">👋 Hi, I'm </p>
                         <br />
                         <a href="https://linktr.ee/surafelkindu"  
-                        className="text-4xl md:text-7xl lg:text-8xl font-roboto font-bold">SURAFEL KINDU</a>
-                        <p className="text-xl md:text-4xl text-slate-500 font-roboto font-thin"> Software Engineer | UI/UX Designer</p>
+                        className="text-4xl md:text-7xl lg:text-8xl font-roboto font-bold text-center">SURAFEL KINDU</a>
+                        <p className="text-xl md:text-4xl text-slate-500 font-roboto font-thin text-center"> Software Engineer | UI/UX Designer</p>
                         <br />
                         <div className="flex justify-center">
                             <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center md:w-2/3">

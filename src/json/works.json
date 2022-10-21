@@ -2,22 +2,6 @@
     "works": [
         {
             "id": 1,
-            "image": "equbapp.webp",
-            "name": "EQUB Financial Technologies",
-            "shortName": "Equb",
-            "title": "Senior Front-End Developer",
-            "link": "https://www.equb.app/",
-            "from": "March 2021",
-            "to": "April 2022",
-            "idid": "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications.",
-            "techs": [
-                "Flutter",
-                "Firebase"
-            ],
-            "source": "https://github.com/equbapp/equb_app"
-        },
-        {
-            "id": 2,
             "image": "africrowds.webp",
             "name": "Africrowds",
             "shortName": "Africrowds",
@@ -25,12 +9,38 @@
             "link": "https://africrowds.netlify.app/",
             "from": "December 2021",
             "to": "June 2022",
-            "idid": "I developed a crow funding platform for startups in Africa. The platform is estimated to help more than 50 startups get funding.",
+            "desc": "I developed a crow funding platform for startups in Africa. The platform is estimated to help more than 50 startups get funding.",
             "techs": [
                 "Reactjs",
                 "Material UI"
             ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-plain.svg"
+            ],
             "source": "https://github.com/Equb4Startups/equb_4_startups_website"
+        },
+        {
+            "id": 2,
+            "image": "equbapp.webp",
+            "name": "EQUB Financial Technologies",
+            "shortName": "Equb",
+            "title": "Senior Front-End Developer",
+            "link": "https://www.equb.app/",
+            "from": "March 2021",
+            "to": "April 2022",
+            "desc": "Working to bring the traditional Ethiopian saving system (EQUB) to the mobile and web world. I am using Flutter to develop both web and mobile applications.",
+            "techs": [
+                "Flutter",
+                "Firebase"
+            ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/flutter/flutter-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/dart/dart-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain.svg"
+            ],
+            "source": "https://github.com/equbapp/equb_app"
         },
         {
             "id": 3,
@@ -41,12 +51,19 @@
             "link": "https://chapa.co/",
             "from": "Dec 2021",
             "to": "April 2022",
-            "idid": "A Fintech startup working to bring a better digital payment system for the developers and service places in Ethiopia. I used Reactjs and ReactNative while working in this company.",
+            "desc": "A Fintech startup working to bring a better digital payment system for the developers and service places in Ethiopia. I used Reactjs and ReactNative while working in this company.",
             "techs": [
                 "Reactjs",
                 "Material UI",
                 "Firebase",
                 "Adobe XD"
+            ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/materialui/materialui-plain.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/xd/xd-plain.svg"
             ],
             "source": "https://github.com/Surafeljava/andu_portfolio"
         },
@@ -59,12 +76,16 @@
             "link": "https://www.gdgaddis.dev/team",
             "from": "Sep 2018",
             "to": "Present",
-            "idid": "Google Developers Group in Addis Ababa.",
+            "desc": "Google Developers Group in Addis Ababa.",
             "techs": [
                 "Adobe Illustrator",
                 "Adobe Photoshop",
                 "Adobe XD",
                 "Adobe Indesign"
+            ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg"
             ],
             "source": ""
         },
@@ -77,11 +98,15 @@
             "link": "https://play.google.com/store/apps/details?id=com.tebesa.dating",
             "from": "Jul 2020",
             "to": "Aug 2021",
-            "idid": "Tebesa Dating is a dating application for the Ethiopian community who are living abroad.",
+            "desc": "Tebesa Dating is a dating application for the Ethiopian community who are living abroad.",
             "techs": [
                 "Flutter",
                 "Firebase",
                 "Adobe XD"
+            ],
+            "tech_icons":[
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg"
             ],
             "source": "https://github.com/Surafeljava/tebesaDating"
         }
