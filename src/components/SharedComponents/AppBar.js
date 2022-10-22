@@ -21,7 +21,7 @@ function AppBar({scrolldown, scrollZero}){
         <div className={scrolldown ? topClassScroll : topClass}>
 
             <div className="flex grow w-full items-center justify-between md:gap-4">
-                <div className="text-red-400 font-roboto font-bold text-3xl flex flex-col"> 
+                <div className="text-orange-dark font-roboto font-bold text-3xl flex flex-col"> 
                     <div className="flex md:hidden"> CJ. </div>
                     <div className="hidden md:flex"> SURAFEL KINDU </div>
                     {/* <div className="text-stone-400 font-roboto text-sm font-normal"> You can call me CJ </div> */}
@@ -43,11 +43,11 @@ function AppBar({scrolldown, scrollZero}){
                 {menus.map((menu) => {
                     return (
                         <li id={menu.id}>
-                            <a href={menu.url} className="group flex flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 hover:text-red-400 hover:cursor-pointer font-roboto duration-200">
+                            <a href={menu.url} className="group flex flex-col gap-1 tracking-wider md:tracking-widest text-md font-thin text-light-1 hover:text-orange-dark hover:cursor-pointer font-roboto duration-200">
                                 <div className="flex gap-2 items-center">
                                     {menu.icon} {menu.name}
                                 </div>
-                                <div className="flex w-0 group-hover:w-full h-0.5 bg-red-500 rounded-full duration-200">
+                                <div className="flex w-0 group-hover:w-full h-0.5 bg-orange-dark rounded-full duration-200">
                                 </div>
                             </a>
                         </li>

@@ -25,12 +25,27 @@ function HomePage(){
                         <img src={profile} alt="profile pic" className=" w-64 rounded-full hover:cursor-pointer duration-300 object-cover border-8 border-white" />
                         <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4">👋 Hi, I'm </p>
                         <br />
-                        <a href="https://linktr.ee/surafelkindu"  
-                        className="text-4xl md:text-7xl lg:text-8xl font-roboto font-bold text-center">SURAFEL KINDU</a>
-                        <p className="text-xl md:text-4xl text-slate-500 font-roboto font-thin text-center"> Software Engineer | UI/UX Designer</p>
+                        <div className='group flex flex-col items-center'>
+                            <a href="https://linktr.ee/surafelkindu"  
+                            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-roboto font-bold group-hover:text-orange-dark duration-300 text-center">SURAFEL KINDU</a>
+                            <div className='flex flex-col md:flex-row justify-center gap-2 md:gap-0 group-hover:gap-2 md:group-hover:gap-16 duration-300 w-full items-center'>
+                                <div className='flex flex-row gap-4 items-center'>
+                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> SOFTWARE ENGINEER </p>
+                                    <div className='hidden md:flex h-0 w-0 bg-orange-dark rotate-45 group-hover:w-2 group-hover:h-2 duration-300'></div>
+                                </div>
+
+                                <p className="text-md md:text-xl text-slate-500 font-roboto font-thin text-center mx-2 group-hover:mx-0"> & </p>
+
+                                <div className='flex flex-row gap-4 items-center'>
+                                    <div className='hidden md:flex h-0 w-0 bg-orange-dark rotate-45 group-hover:w-2 group-hover:h-2 duration-300'></div>
+                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> UI/UX DESIGNER</p>
+                                </div>
+                                
+                            </div>
+                        </div>
                         <br />
                         <div className="flex justify-center">
-                            <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center md:w-2/3">
+                            <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center lg:w-2/3">
                                 Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
                                 I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
                             </div>

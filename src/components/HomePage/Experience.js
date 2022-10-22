@@ -14,8 +14,15 @@ function Experience() {
 
     return (
         <div id="projects" className="text-slate-400 font-roboto w-full flex flex-col items-center md:items-start gap-4 justify-center px-0 mb-4 md:py-8 md:px-20 md:mb-10"> 
-            <div className="font-bold text-3xl md:text-5xl text-darker-2">
-                Personal Projects
+
+            <div className="flex flex-row justify-between md:justify-between w-full items-center mb-8 md:mb-16">
+                <div className='h-0.5 flex-grow bg-gradient-to-l from-darker-2 to-light-1'></div>
+                <div className='h-2 w-2 md:h-3 md:w-3 bg-darker-2 rotate-45'></div>
+                <div className="font-bold text-3xl md:text-5xl text-darker-2 mx-3 md:mx-6">
+                    Personal Projects
+                </div>
+                <div className='h-2 w-2 md:h-3 md:w-3 bg-darker-2 rotate-45'></div>
+                <div className='h-0.5 flex-grow bg-gradient-to-r from-darker-2 to-light-1'></div>
             </div>
             {projects !== null && (
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">

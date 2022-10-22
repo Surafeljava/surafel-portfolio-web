@@ -6,8 +6,8 @@ function ResumeButton() {
             RESUME
         </div>
         <a href='https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing' 
-        className="bg-red-400 rounded-full justify-center items-center px-4 py-4 hover:scale-110 duration-200">
-            <FiFileText className="text-darker-2 text-xl"/>
+        className="bg-orange-dark rounded-full justify-center items-center px-4 py-4 hover:scale-110 duration-200">
+            <FiFileText className="text-white text-xl"/>
         </a>
     </div>
 }

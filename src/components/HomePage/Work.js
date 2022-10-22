@@ -16,8 +16,14 @@ function Work(){
         <div id="work" className="text-stone-300 w-full h-auto md:min-h-screen grow grid grid-cols-12 gap-4 justify-start md:py-8 md:mb-8 md:pt-24 md:px-14">
 
             <div className="w-full col-span-12 flex flex-col items-center md:px-6 text-darker-2 rounded-xl">
-                <div className="font-bold text-3xl md:text-5xl text-darker-2 mb-8 md:mb-10">
-                    Work Experience
+                <div className="flex flex-row justify-between md:justify-between w-full items-center mb-8 md:mb-16">
+                    <div className='h-0.5 flex-grow bg-gradient-to-l from-darker-2 to-light-1'></div>
+                    <div className='h-2 w-2 md:h-3 md:w-3 bg-darker-2 rotate-45'></div>
+                    <div className="font-bold text-3xl md:text-5xl text-darker-2 mx-3 md:mx-6">
+                        Work Experiences
+                    </div>
+                    <div className='h-2 w-2 md:h-3 md:w-3 bg-darker-2 rotate-45'></div>
+                    <div className='h-0.5 flex-grow bg-gradient-to-r from-darker-2 to-light-1'></div>
                 </div>
                 <div className="grow w-full grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 pr-0  justify-center items-center">
                     {works.map((work) => {
