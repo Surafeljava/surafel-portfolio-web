@@ -5,7 +5,7 @@ function ResumeButton() {
         <div className="text-md text-darker-2  font-medium hidden group-hover:flex px-4 py-2 rounded-xl bg-white">
             RESUME
         </div>
-        <a href='https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing' 
+        <a href='https://drive.google.com/file/d/1F40JLy2SvJjQsg_McF23sw53Xv0qVXxy/view?usp=sharing' 
         className="bg-orange-dark rounded-full justify-center items-center px-4 py-4 hover:scale-110 duration-200">
             <FiFileText className="text-white text-xl"/>
         </a>
