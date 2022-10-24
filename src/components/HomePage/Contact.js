@@ -31,7 +31,7 @@ function Contact() {
                         <input type="text" value={message.name} className="rounded-lg py-3 px-4 text-darker-1" placeholder="Full name" onChange={(e) => setMessage({...message, name: e.target.value})}/>
                         <input type="email" value={message.email} className="rounded-lg py-3 px-4 text-darker-1" placeholder="Email" onChange={(e) => setMessage({...message, email: e.target.value})}/>
                         <textarea type="text" value={message.text} cols="30" rows="5" placeholder="Message" className="rounded-lg py-3 px-4 text-darker-1" onChange={(e) => setMessage({...message, text: e.target.value})}/>
-                        <div className="flex items-center justify-center md:justify-start gap-4 w-full">
+                        <div className="flex items-center justify-center  gap-4 w-full">
                             <div className="flex group items-center">
                                 <FaChevronRight className='text-red-400 w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <button onClick={() => {

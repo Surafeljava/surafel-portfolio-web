@@ -2,7 +2,7 @@
 
 import profile from '../../asset/profile.png';
 
-import { FaChevronRight } from "react-icons/fa";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 // const techs = [
 //     {id:1, name: "Reactjs"}, 
@@ -33,7 +33,7 @@ function HomePage(){
                 
                 <div className="grid grid-cols-12 grid-flow-row w-full items-center justify-center">
                     <div className="col-span-12 w-full flex flex-col items-center">
-                        <img src={profile} alt="profile pic" className="w-40 md:w-64 rounded-full hover:cursor-pointer duration-300 object-cover border-4 md:border-8 hover:border-4 duration-200 border-white" />
+                        <img src={profile} alt="profile pic" className="w-40 md:w-64 rounded-full hover:cursor-pointer object-cover border-4 md:border-8 hover:border-4 duration-200 border-white" />
                         <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4 mb-2">👋 Hi, I'm </p>
                         <div className='group flex flex-col items-center'>
                             <a href="https://www.linkedin.com/in/surafelk/"  
@@ -64,29 +64,29 @@ function HomePage(){
                         <br />
                         <div className="flex gap-6">
                             <div className="flex group items-center">
-                                <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" 
-                                className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 ml-0 group-hover:ml-2 group-hover:text-red-400 duration-200">
+                                className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 group-hover:bg-white mr-0 group-hover:mr-2 group-hover:text-orange-dark duration-200">
                                     My Resume
                                 </a>
+                                <FaChevronLeft className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -mr-2 group-hover:mr-0 group-hover:visible duration-200'/>
                             </div>
 
                             <div className="flex group items-center">
                                 <FaChevronRight className='w-2 h-2 group-hover:w-4 group-hover:h-4 invisible -ml-2 group-hover:ml-0 group-hover:visible duration-200'/>
                                 <a href="https://linktr.ee/surafelkindu" 
-                                className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 ml-0 group-hover:ml-2 group-hover:text-red-400 duration-200">
+                                className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 group-hover:bg-white ml-0 group-hover:ml-2 group-hover:text-orange-dark duration-200">
                                     My Socials
                                 </a>
                             </div>
 
                         </div>
 
-                        <div className='flex flex-col gap-3 items-center mt-6'>
-                            <p className="text-lg lg:text-xl text-slate-500 font-roboto text-center"> SKILLS </p>
+                        <div className='flex flex-col gap-2 items-center mt-8'>
+                            <p className="text-md lg:text-lg text-slate-500 font-roboto text-center"> SKILLS </p>
                             <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
                                 {skills.map((skill) => {
                                     return (
-                                        <div key={skill.id} className='px-5 py-3 rounded-full bg-white flex gap-3 items-center hover:scale-105 duration-200'>
+                                        <div key={skill.id} className='px-5 py-3 rounded-full bg-white flex gap-3 items-center hover:scale-110 duration-200'>
                                             <img src={skill.icon} title={skill.title} alt={skill.title} width="20" height="20"/>
                                             <p className="text-sm text-slate-500 font-roboto text-center"> {skill.title} </p>
                                         </div>

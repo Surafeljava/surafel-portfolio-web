@@ -54,13 +54,20 @@ function LandingPage() {
       <Contact/>
       
       <div className='flex flex-col items-center'>
-        <div className="text-md text-slate-800">
-            +251 942 85 97 23
+        <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6">
+          <a className="text-md text-darker-2 font-medium" href='mailto:surafel.mulaw@gmail.com'>
+              surafel.mulaw@gmail.com
+          </a>
+          <div className="text-md text-darker-2 font-medium">
+              +251-942-859723
+          </div>
+          <div className="text-md text-darker-2 font-medium">
+              Addis Ababa, Ethiopia
+          </div>
         </div>
-        <div className="text-md text-slate-800">
-            Addis Ababa, Ethiopia
-        </div>
-        <div className="text-slate-800 h-10 flex justify-center my-2">Made with ❤ - by Surafel Kindu</div>
+        <div className="text-darker-2 flex justify-center mb-6 mt-2 text-md">
+          Made with ❤ by <a href="https://github.com/Surafeljava" className="ml-2 text-red-600 font-medium"> Surafel Kindu</a>
+          </div>
       </div>
 
       <div className="hidden md:flex fixed z-200 bottom-0 left-0 flex-col justify-center items-center px-4 md:px-8 gap-6 min-h-screen">
