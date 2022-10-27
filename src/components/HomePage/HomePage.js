@@ -64,7 +64,7 @@ function HomePage(){
                         <br />
                         <div className="flex gap-6">
                             <div className="flex group items-center">
-                                <a href="https://drive.google.com/file/d/10aGkgkTrCIfSUxFHaOAEUd-Na3FOdob_/view?usp=sharing" 
+                                <a href="https://drive.google.com/file/d/1YdgtBKL8E4Z2CPAqwrG8wVhfFskMiMs_/view?usp=sharing" 
                                 className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 group-hover:bg-white mr-0 group-hover:mr-2 group-hover:text-orange-dark duration-200">
                                     My Resume
                                 </a>
