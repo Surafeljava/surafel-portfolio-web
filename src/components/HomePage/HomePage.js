@@ -56,8 +56,9 @@ function HomePage(){
                         <br />
                         <div className="flex justify-center">
                             <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center lg:w-2/3">
-                                Self-Driven and passionate software engineer. Fullstack web and mobile application developer. 
-                                I am able to work well under pressure and adhere to strict deadlines.I'm also very passionate about AI, specifically Natural Language Processing and Image Processing.
+                                I'm a Software Engineer with a combined 3.5 years of work experience in full-stack development. 
+                                I have helped companies create dynamic and user-friendly websites and mobile applications that have touched over 80,000 active users. 
+                                I get excited about opportunities where I get to turn ideas into a working mobile and web applications that anyone can use.
                             </div>
                         </div>
 
