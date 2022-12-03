@@ -2,7 +2,7 @@
     "works": [
         {
             "id": 0,
-            "image": "chapa.webp",
+            "image": "securicom.png",
             "name": "Securicom PLC",
             "shortName": "Securicom",
             "title": "Mobile Front-End Developer",
@@ -93,29 +93,35 @@
         },
         {
             "id": 4,
-            "image": "equbapp.webp",
-            "name": "GDG Addis",
-            "shortName": "GDGAddis",
-            "title": "Creative Design Team Leader",
+            "image": "lomi3.png",
+            "name": "Lomi Fund",
+            "shortName": "Lomi Fund",
+            "title": "Fullstack Developer",
             "link": "https://www.gdgaddis.dev/team",
             "from": "Sep 2018",
             "to": "Present",
-            "desc": "Google Developers Group in Addis Ababa.",
+            "desc": "A mobile application for digitizing charity and funding.",
             "techs": [
-                "Adobe Illustrator",
-                "Adobe Photoshop",
-                "Adobe XD",
-                "Adobe Indesign"
+                "Reactjs",
+                "React Native",
+                "Node.js",
+                "Express.js",
+                "JavaScript",
+                "Redux"
             ],
             "tech_icons":[
                 "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original-wordmark.svg",
-                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg"
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-plain.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg",
+                "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/express/express-original-wordmark.svg"
             ],
             "source": ""
         },
         {
             "id": 5,
-            "image": "equbapp.webp",
+            "image": "tebesa2.png",
             "name": "Tebesa Dating",
             "shortName": "TebesaDating",
             "title": "Mobile Application Developer",
