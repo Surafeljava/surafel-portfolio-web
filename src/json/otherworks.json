@@ -13,7 +13,7 @@
         {
             "title": "Amharic Sentiment Analysis Hate Speech Detection System",
             "description": "The scope of this project is limited to the presence or absence of hate speech on Amharic language Twitter posts. In this...",
-            "link": "https://amharicsentiment.netlify.app/",
+            "link": "/amh-nlp",
             "github": "https://github.com/Amharic-Sentiment-Analysis/Amharic-Sentiment-Analysis-Frontend",
             "techs": [
                 "Reactjs",

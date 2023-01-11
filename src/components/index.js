@@ -6,6 +6,6 @@ import Contact from "./HomePage/Contact";
 import ResumePage from "./ResumePage/ResumePage";
 import Experience from "./HomePage/Experience";
 import Certification from "./HomePage/Certification";
+import AmhNlpPage from "./AmhNlpPage/AmhNlpPage";
 
-
-export {AppBar, HomePage, Work, Contact, ResumePage, Experience, Certification, ResumeButton};
+export {AppBar, HomePage, Work, Contact, ResumePage, Experience, Certification, ResumeButton, AmhNlpPage};
