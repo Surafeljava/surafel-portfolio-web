@@ -15,10 +15,12 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 // ];
 
 const skills = [
+    {id:0, title: 'React Native', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg'},
     {id:1, title: 'ReactJS', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg'},
-    {id:2, title: 'Node.js', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg'},
-    {id:3, title: 'Flutter', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/flutter/flutter-original.svg'},
-    {id:4, title: 'Tensorflow', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tensorflow/tensorflow-original.svg'},
+    {id:2, title: 'Python', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg'},
+    {id:3, title: 'Node.js', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg'},
+    {id:4, title: 'Flutter', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/flutter/flutter-original.svg'},
+    {id:5, title: 'Tensorflow', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tensorflow/tensorflow-original.svg'},
     // {id:5, title: 'Machine Learning', icon:''},
     {id:6, title: 'Adobe XD', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/xd/xd-line.svg'},
     {id:7, title: 'Adobe Illustrator', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/illustrator/illustrator-line.svg'},

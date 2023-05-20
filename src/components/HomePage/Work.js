@@ -2,10 +2,13 @@ import React, {useState, useEffect} from 'react';
 import works2 from "../../json/works.json";
 
 import {FiGithub, FiArrowRightCircle} from "react-icons/fi";
+import DetailsPage from '../DetailsPage/DetailsPage';
 
 function Work(){
 
     const [works, setWorks] = useState([]);
+
+    const [showWork, setShowWork] = useState();
 
     useEffect(() => {
         setWorks([...works2.works]);
@@ -28,10 +31,11 @@ function Work(){
                 <div className="grow w-full grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 pr-0  justify-center items-center">
                     {works.map((work) => {
                         return (
-                            <div key={work.id} className="flex flex-col w-full">
+                            <div key={work.id} className="flex flex-col w-full" >
                                 <div className="w-full relative" style={{height:600}} key={work.name}>
                                     {/* Background Image */}
-                                    <img src={`/assets/works/${work.image}`} alt="project" className="absolute top-0 left-0 z-20 w-full h-96 object-cover"/>
+                                    <img src={require(`../../asset/works/${work.image}`)} alt="project" 
+                                    className="absolute top-0 left-0 z-20 w-full h-96 object-cover" />
 
                                     {/* Background Overlay */}
                                     <div className="h-full w-full justify-end bg-gradient-to-t from-black-50 to-black-0 flex flex-col absolute top-0 left-0 z-30">
@@ -39,7 +43,10 @@ function Work(){
 
                                     {/* Top Right Button */}
                                     <div className="flex items-center absolute top-0 right-0 z-40 p-4 md:p-6 gap-2 group">
-                                        <button className="flex group items-center gap-4 px-4 py-2 bg-white text-sm md:text-md text-custom-dark font-space-grotesk font-bold">
+                                        <button className="flex group items-center gap-4 px-4 py-2 bg-white text-sm md:text-md text-custom-dark font-space-grotesk font-bold"
+                                        onClick={() => {
+                                            setShowWork(work);
+                                        }}>
                                             Read More
                                             <svg viewBox="0 0 53 16" fill="none" className="w-10 group-hover:ml-6 duration-200">
                                                 <path d="M52.2071 8.70711C52.5976 8.31658 52.5976 7.68342 52.2071 7.29289L45.8431 0.928932C45.4526 0.538408 44.8195 0.538408 44.4289 0.928932C44.0384 1.31946 44.0384 1.95262 44.4289 2.34315L50.0858 8L44.4289 13.6569C44.0384 14.0474 44.0384 14.6805 44.4289 15.0711C44.8195 15.4616 45.4526 15.4616 45.8431 15.0711L52.2071 8.70711ZM0 9H51.5V7H0V9Z" fill="#19191E"/>
@@ -106,6 +113,7 @@ function Work(){
 
 
             </div>
+            {showWork && <DetailsPage onClose={() => setShowWork()} workData={showWork}/>}
 
         </div>
     );
