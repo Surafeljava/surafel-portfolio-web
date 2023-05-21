@@ -57,8 +57,8 @@ function HomePage(){
                         </div>
                         <br />
                         <div className="flex justify-center">
-                            <div className="font-roboto font-normal text-md md:text-lg text-slate-500 text-center lg:w-2/3">
-                                I'm a Software Engineer with a combined 3.5 years of work experience in full-stack development. 
+                            <div className="font-roboto font-normal text-md md:text-lg text-slate-500 lg:w-2/3 text-justify md:text-center">
+                                I'm a Software Engineer with a combined 4+ years of work experience in full-stack development. 
                                 I have helped companies create dynamic and user-friendly websites and mobile applications that have touched over 80,000 active users. 
                                 I get excited about opportunities where I get to turn ideas into a working mobile and web applications that anyone can use.
                             </div>
@@ -101,10 +101,6 @@ function HomePage(){
                 </div>
 
             </div>
-
-            {/* <div className="invisible md:col-span-4 lg:col-span-5 md:visible md:h-full md:w-full md:flex md:items-center md:justify-center ">
-                <Spline scene="https://prod.spline.design/Qnd2Hq1ZC9JEdnlJ/scene.splinecode" />
-            </div> */}
 
         </div>
     );

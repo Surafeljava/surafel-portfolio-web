@@ -3,7 +3,6 @@ import { AppBar, HomePage, Work, Contact, Experience, Certification, ResumeButto
 
 import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-
 function LandingPage() {
   
   let lastYOffset = 0;
@@ -40,6 +39,8 @@ function LandingPage() {
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+
 
   return (
     <div onScroll={onScroll} className="flex flex-col bg-light-1 px-4 md:px-20 items-center scroll-smooth gap-6">
