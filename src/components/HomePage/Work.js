@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import works2 from "../../json/works.json";
 
 import {FiGithub, FiArrowRightCircle} from "react-icons/fi";
 import DetailsPage from '../DetailsPage/DetailsPage';
+
+import { db } from '../../firebase/firebaseConfig';
+import { onSnapshot, collection, query } from 'firebase/firestore';
+import { Link } from 'react-router-dom';
 
 function Work(){
 
@@ -11,8 +14,12 @@ function Work(){
     const [showWork, setShowWork] = useState();
 
     useEffect(() => {
-        setWorks([...works2.works]);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        const q = query(collection(db, "projects"));
+        onSnapshot(q, 
+        (snapshot) => {
+            const wrks = snapshot.docs.map((doc)=>({...doc.data(), id: doc.id}));
+            setWorks(wrks);
+        })
     }, []);
 
     return (
@@ -32,9 +39,9 @@ function Work(){
                     {works.map((work) => {
                         return (
                             <div key={work.id} className="flex flex-col w-full" >
-                                <div className="w-full relative" style={{height:600}} key={work.name}>
+                                <div className="w-full relative rounded-xl overflow-hidden" style={{height:600}} key={work.name}>
                                     {/* Background Image */}
-                                    <img src={require(`../../asset/works/${work.image}`)} alt="project" 
+                                    <img src={work.images[0]} alt="project" 
                                     className="absolute top-0 left-0 z-20 w-full h-96 object-cover" />
 
                                     {/* Background Overlay */}
@@ -43,15 +50,12 @@ function Work(){
 
                                     {/* Top Right Button */}
                                     <div className="flex items-center absolute top-0 right-0 z-40 p-4 md:p-6 gap-2 group">
-                                        <button className="flex group items-center gap-4 px-4 py-2 bg-white text-sm md:text-md text-custom-dark font-space-grotesk font-bold"
-                                        onClick={() => {
-                                            setShowWork(work);
-                                        }}>
+                                        <Link to={`/work/${work.id}`} className="flex group items-center gap-4 px-4 py-2 bg-white text-sm md:text-md text-custom-dark font-space-grotesk font-bold rounded-lg">
                                             Read More
                                             <svg viewBox="0 0 53 16" fill="none" className="w-10 group-hover:ml-6 duration-200">
                                                 <path d="M52.2071 8.70711C52.5976 8.31658 52.5976 7.68342 52.2071 7.29289L45.8431 0.928932C45.4526 0.538408 44.8195 0.538408 44.4289 0.928932C44.0384 1.31946 44.0384 1.95262 44.4289 2.34315L50.0858 8L44.4289 13.6569C44.0384 14.0474 44.0384 14.6805 44.4289 15.0711C44.8195 15.4616 45.4526 15.4616 45.8431 15.0711L52.2071 8.70711ZM0 9H51.5V7H0V9Z" fill="#19191E"/>
                                             </svg>
-                                        </button>
+                                        </Link>
                                     </div>
 
                                     <div className="flex flex-col justify-end w-full h-full absolute top-0 right-0 z-30 gap-2 group">
@@ -86,7 +90,7 @@ function Work(){
                                             </div> */}
 
                                             <div className="flex flex-row gap-5 my-2">
-                                                {work.tech_icons.map((tech) => {
+                                                {work.techIcons.map((tech) => {
                                                     return (
                                                         <img src={tech} title="React" alt="React" width="30" height="30"/>
                                                     );

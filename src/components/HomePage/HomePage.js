@@ -1,33 +1,27 @@
 // import Spline from '@splinetool/react-spline';
-
-import profile from '../../asset/profile.png';
+import { useState, useEffect, useContext } from 'react';
 
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-// const techs = [
-//     {id:1, name: "Reactjs"}, 
-//     {id:2, name: "Node.js/Express"}, 
-//     {id:3, name: "Mongodb"}, 
-//     {id:4, name: "Graphql"}, 
-//     {id:5, name: "Postgres SQL"}, 
-//     {id:6, name: "Flutter"},
-//     {id:7, name: "Tensorflow"},
-// ];
+import { db } from '../../firebase/firebaseConfig';
+import { onSnapshot, collection, query } from 'firebase/firestore';
 
-const skills = [
-    {id:0, title: 'React Native', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg'},
-    {id:1, title: 'ReactJS', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg'},
-    {id:2, title: 'Python', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/python/python-original.svg'},
-    {id:3, title: 'Node.js', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg'},
-    {id:4, title: 'Flutter', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/flutter/flutter-original.svg'},
-    {id:5, title: 'Tensorflow', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tensorflow/tensorflow-original.svg'},
-    // {id:5, title: 'Machine Learning', icon:''},
-    {id:6, title: 'Adobe XD', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/xd/xd-line.svg'},
-    {id:7, title: 'Adobe Illustrator', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/illustrator/illustrator-line.svg'},
-    {id:8, title: 'Figma', icon:'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/figma/figma-original.svg'},
-];
+import { UserContext } from '../../contexts/UserContext';
 
 function HomePage(){
+    const {myData} = useContext(UserContext);
+    const [skills, setSkills] = useState([]);
+
+    useEffect(() => {
+        const q = query(collection(db, "skills"));
+        onSnapshot(q, 
+        (snapshot) => {
+            const sks = snapshot.docs.map((doc)=>({...doc.data(), id: doc.id}));
+            setSkills(sks);
+            console.log(sks)
+        })
+    }, [])
+
     return (
         <div id="about" className="text-stone-300 w-full min-h-screen grow grid grid-cols-12 grid-flow-row justify-start items-center gap-2">
 
@@ -35,14 +29,18 @@ function HomePage(){
                 
                 <div className="grid grid-cols-12 grid-flow-row w-full items-center justify-center">
                     <div className="col-span-12 w-full flex flex-col items-center">
-                        <img src={profile} alt="profile pic" className="w-40 md:w-64 rounded-full hover:cursor-pointer object-cover border-4 md:border-8 hover:border-4 duration-200 border-white" />
+
+                        <img src={`${myData?.profile}`} alt="profile pic" 
+                        className="w-40 md:w-64 h-40 md:h-64 bg-white rounded-full hover:cursor-pointer object-cover border-4 md:border-8 hover:border-4 duration-200 border-white" />
                         <p className="text-2xl md:text-3xl text-slate-500 font-roboto font-normal tracking-widest mx-0 pt-4 mb-2">👋 Hi, I'm </p>
                         <div className='group flex flex-col items-center'>
                             <a href="https://www.linkedin.com/in/surafelk/"  
-                            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-roboto font-bold group-hover:text-orange-dark duration-300 text-center">SURAFEL KINDU</a>
+                            className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-roboto font-bold group-hover:text-orange-dark duration-300 text-center uppercase">
+                                {`${myData?.fullname}`}
+                            </a>
                             <div className='flex flex-col md:flex-row justify-center gap-0 md:gap-0 group-hover:gap-2 md:group-hover:gap-16 duration-300 w-full items-center'>
                                 <div className='flex flex-row gap-4 items-center'>
-                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> SOFTWARE ENGINEER </p>
+                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> {`${myData?.position1}`} </p>
                                     <div className='hidden md:flex h-0 w-0 bg-orange-dark rotate-45 group-hover:w-2 group-hover:h-2 duration-300'></div>
                                 </div>
 
@@ -50,7 +48,7 @@ function HomePage(){
 
                                 <div className='flex flex-row gap-4 items-center'>
                                     <div className='hidden md:flex h-0 w-0 bg-orange-dark rotate-45 group-hover:w-2 group-hover:h-2 duration-300'></div>
-                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> UI/UX DESIGNER</p>
+                                    <p className="text-xl lg:text-3xl text-slate-500 font-roboto font-thin text-center"> {`${myData?.position2}`}</p>
                                 </div>
                                 
                             </div>
@@ -58,16 +56,14 @@ function HomePage(){
                         <br />
                         <div className="flex justify-center">
                             <div className="font-roboto font-normal text-md md:text-lg text-slate-500 lg:w-2/3 text-justify md:text-center">
-                                I'm a Software Engineer with a combined 4+ years of work experience in full-stack development. 
-                                I have helped companies create dynamic and user-friendly websites and mobile applications that have touched over 80,000 active users. 
-                                I get excited about opportunities where I get to turn ideas into a working mobile and web applications that anyone can use.
+                                {`${myData?.statement}`}
                             </div>
                         </div>
 
                         <br />
                         <div className="flex gap-6">
                             <div className="flex group items-center">
-                                <a href="https://drive.google.com/file/d/1YdgtBKL8E4Z2CPAqwrG8wVhfFskMiMs_/view?usp=sharing" 
+                                <a href={`${myData?.resume}`} 
                                 className="px-4 py-2 rounded-full font-roboto text-white text-md bg-darker-2 group-hover:bg-white mr-0 group-hover:mr-2 group-hover:text-orange-dark duration-200">
                                     My Resume
                                 </a>
@@ -86,16 +82,27 @@ function HomePage(){
 
                         <div className='flex flex-col gap-2 items-center mt-8'>
                             <p className="text-md lg:text-lg text-slate-500 font-roboto text-center"> SKILLS </p>
-                            <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
-                                {skills.map((skill) => {
-                                    return (
-                                        <div key={skill.id} className='px-5 py-3 rounded-full bg-white flex gap-3 items-center hover:scale-110 duration-200'>
-                                            <img src={skill.icon} title={skill.title} alt={skill.title} width="20" height="20"/>
-                                            <p className="text-sm text-slate-500 font-roboto text-center"> {skill.title} </p>
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                            {skills.length>0 ? (
+                                <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
+                                    {skills.map((skill) => {
+                                        return (
+                                            <div key={skill.id} className='px-5 py-3 rounded-full bg-white flex gap-3 items-center hover:scale-110 duration-200'>
+                                                <img src={skill.icon} title={skill.title} alt={skill.title} width="20" height="20"/>
+                                                <p className="text-sm text-slate-500 font-roboto text-center"> {skill.title} </p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            ) : (
+                                <div className="flex gap-2 md:gap-4 justify-center flex-wrap">
+                                    {[1,2,3,4,5].map((skill) => {
+                                        return (
+                                            <div key={skill.id} className='w-32 h-10 rounded-full bg-black bg-opacity-5 flex gap-3 items-center hover:scale-110 duration-200'>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
