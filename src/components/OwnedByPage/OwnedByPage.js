@@ -20,8 +20,9 @@ function OwnedByPage() {
             </div>
 
             <div className='flex flex-col gap-2 mt-20 max-w-2xl mb-20'>
-                <div className="flex flex-row w-full justify-between items-center">
+                <div className="flex flex-row w-full justify-between items-end">
                     <div className="flex flex-col">
+                        <p>This site is owned and operated by</p>
                         <div className="text-black text-xl md:text-2xl font-bold">
                             {`${myData?.fullname}`}
                         </div>
@@ -41,7 +42,7 @@ function OwnedByPage() {
                 </div>
 
                 <img src={`${myData?.profile}`} alt="project" 
-                className="w-full h-[600px] object-cover rounded-lg" />
+                className="w-full h-[550px] object-cover rounded-xl border-2 mt-2 mb-2 border-black" />
 
                 <div className="flex flex-row items-start gap-4 mb-4 text-lg">
                 {`${myData?.statement}`}
