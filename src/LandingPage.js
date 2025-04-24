@@ -58,13 +58,13 @@ function LandingPage() {
       <div className='flex flex-col items-center'>
         <div className="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-6">
           <a className="text-md text-darker-2 font-medium" href='mailto:surafel.mulaw@gmail.com'>
-            {`${myData?.email}`}
+            {`surafelkindu01@gmail.com`}
           </a>
           <div className="text-md text-darker-2 font-medium">
-            {`${myData?.phone}`}
+            {`+2519 86 214 242`}
           </div>
           <div className="text-md text-darker-2 font-medium">
-            {`${myData?.location}`}
+            {`Eritrea St. ${myData?.location}`}
           </div>
         </div>
         <div className="text-darker-2 flex justify-center mb-6 mt-2 text-md">

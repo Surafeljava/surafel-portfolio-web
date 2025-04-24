@@ -1,5 +1,5 @@
 import LandingPage from "./LandingPage";
-import { ResumePage, AmhNlpPage, DetailsPage } from "./components";
+import { ResumePage, AmhNlpPage, DetailsPage, OwnedByPage } from "./components";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -42,6 +42,7 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="work/:id" element={<DetailsPage />} />
+              <Route path="owned-by" element={<OwnedByPage />} />
               <Route path="resume" element={<ResumePage />} />
               <Route path="amh-nlp" element={<AmhNlpPage />} />
             </Routes>

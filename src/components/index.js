@@ -8,5 +8,7 @@ import Experience from "./HomePage/Experience";
 import Certification from "./HomePage/Certification";
 import AmhNlpPage from "./AmhNlpPage/AmhNlpPage";
 import DetailsPage from "./DetailsPage/DetailsPage";
+import OwnedByPage from "./OwnedByPage/OwnedByPage";
 
-export {AppBar, HomePage, Work, Contact, ResumePage, Experience, Certification, ResumeButton, AmhNlpPage, DetailsPage};
+export {AppBar, HomePage, Work, Contact, ResumePage, Experience, Certification, 
+    ResumeButton, AmhNlpPage, DetailsPage, OwnedByPage};
